@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ASK-IT</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/olc3cwa.css">
+  <!-- Meta Partage -->
+  <!-- Favicon -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/app.css">
+  <script src="scripts/main.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <link rel="icon" href="assets/images/logo_askit.png">
+</head>
+<body>
+    <header class="section__header" id="navbar">
+        <div class="nav" >
+          <div class="nav__logo">
+            <img src="assets/images/logo_askit.svg" alt="logo">
+          </div>
+          <!-- <div class="btn--darkmode">
+            <button class="btn"></button>
+          </div> -->
+          <div class="nav__download">
+            <a href="https://xd.adobe.com/view/07e8a65e-3bb0-4e35-84a7-22f59e3b2cad-52bb/?fullscreen&hints=off">DOWNLOAD</a>
+          </div>
+        </div>
+        <!-- <div class="loader loader--active">
+        <div class="loader__tile"></div>
+      </div> -->
+      </header>
+      <main class="case-study">
+          <section class="section section--intro-cs">
+               <h2 class="title title--medium">case-study de l'application</h2>
+               <h1 class="title title--big">MUSICOM</h1>
+               <p>
+                Ask-it est une application de forum axée sur la musique qui permet aux utilisateurs, par le biais de questions/réponses, de découvrir et de partager leurs connaissances musicales.
+               </p>
+          </section>
+          <section class="section section--intro-projet">
+              <p class="bold">
+                Ask-it est une application de forum axée sur la musique qui permet aux utilisateurs, par le biais de questions/réponses, de découvrir et de partager leurs connaissances musicales.
+              </p>
+          </section>
+          <section class="section section--concept">
+              <h2 class="title title--medium">EXPLICATION DU CONCEPT</h2>
+              <p>
+                Lorsqu’on écoute beaucoup de musique et qu’on a une centaine d’heures d’écoute sur sa playlist Spotify, eh bien on s’en lasse parfois et on a envie de découvrir de nouvelles choses, de nouveaux genres, de nouveaux artistes. Même si certains morceaux sont intemporels et peuvent être écoutés en boucle, on sent parfois ce manque de nouveautés parmi les auditeurs interviewés.
+              </p>
+              <p class="bold">
+                Je me suis donc focalisé sur cette problématique principale et j’ai émis l’hypothèse que les personnes qui écoutent beaucoup la musique seraient intéressées par un forum mobile où l’on peut découvrir de nouvelles chansons grâce à des questions/réponses entre utilisateurs.
+              </p>
+          </section>
+          <section class="section section--users">
+              <div class="section--users__txt">
+                <p>
+                    Pour vérifier si j’étais sur la bonne piste et si le public cible était intéressé par ce genre de service, j’ai partagé un sondage grâce auquel j’ai recueilli des informations importantes pour la suite du développement de mon projet.
+                  </p>
+                  <p>
+                    De nombreuses réponses furent très constructives et m’ont permis d’ouvrir les yeux sur l’importance des tests et de l’avis du public cible. Certaines étaient de très bonnes suggestions que j'utiliserai plus tard dans mon prototype.
+                  </p>
+              </div>
+              <div class="section--users__feedbacks">
+                  <div class="txt-square1">
+                      <p>
+                        De nombreux auditeurs découvrent des nouveaux morceaux grâce aux suggestions Spotify mais trouvent uniquement 1 son qui (lui plaît) sur les 50 disponibles.
+                      </p>
+                  </div>
+                  <div class="txt-square2">
+                    <p>
+                        Certains se posent des questions sur ce vaste monde de la musique mais Internet ne peut répondre à ces dernières.
+                    </p>
+                </div>
+                <div class="txt-square3">
+                    <p>
+                        Certaines personnes sont très ouvertes et veulent partager leur savoir sur la musique et donner des suggestions à d’autres personnes.
+                    </p>
+                </div>
+              </div>
+          </section>
+          <section class="section section--problems">
+              <div class="problems__txt">
+                <h2 class="title title--medium">Les solutions aux problèmes rencontrés</h2>
+                <p>
+                  Après avoir interviewé mon public cible et après avoir identifié les soucis que rencontrent les gens, j’ai pensé aux fonctionnalités que mon application pourrait avoir pour résoudre ces problèmes.
+                </p>
+              </div>
+              <div class="problems__fonctions">
+                  <div class="fonc1">
+                      <h3 class="title title--little">Poser une question</h3>
+                      <p>
+                        La première étant d’avoir la possibilité de poser une question sur un feed en rapport avec la musique. Cela peut être une question culturelle ou tout simplement une demande de recommandation de morceaux, d’artistes ou de genres. Questions qui peuvent être accompagnées d’une image et/ou d’un morceau qu’on peut écouter directement sans passer par des liens.
+                      </p>
+                  </div>
+                  <div class="fonc2">
+                      <h3 class="title title--little">Répondre à une question</h3>
+                      <p>
+                          La deuxième est la possibilité de pouvoir répondre à ces questions, que ce soit avec un simple paragraphe ou avec un son qu’on pourra écouter, et accessoirement ajouter à la playlist de la plateforme de streaming au choix.
+                      </p>
+                  </div>
+              </div>
+          </section>
+          <section class="sectionsection--prototype">
+              <h2 class="title title--little">Création du prototype</h2>
+              <div class="mvp">
+                  <img src="" alt="">
+                  <p>
+                    C’est à présent qu’entre en jeu le MVP, autrement dit, le “produit minimum viable”. Il s’agit d’une première version de prototype, pouvant être améliorée par le suite grâce aux retours des tests utilisateurs. Celle-ci est sans design, sans image et en niveau de gris, ce qui permet de vérifier l’accessibilité de l’application sans que le “testeur” ne soit influencé par l’aspect visuel.
+                    Après avoir effectué les tests utilisateurs, j’ai ressorti plusieurs éléments intéressants à améliorer :
+                  </p>
+              </div>
+              <div class="upgrades">
+                  <div class="filters">
+                      <div class="wrong">
+                        <img src="" alt="wrong">
+                        <p class="bold">
+                          Le système de filtrage qui était un peu trop présent et finalement pas très intuitif.
+                        </p>
+                      </div>
+                      <div class="correct">
+                        <img src="" alt="correct">
+                        <p class="bold">
+                            J’ai donc proposé un système de hashtag beaucoup plus simple où, lorsqu’on veut que notre question soit référencée dans une catégorie, il suffit de mettre un hashtag.
+                        </p>
+                      </div>
+                  </div>
+                  <div class="account">
+                      <div class="wrong">
+                        <img src="" alt="wrong">
+                        <p class="bold">
+                          J’ai donc proposé un système de hashtag beaucoup plus simple où, lorsqu’on veut que notre question soit référencée dans une catégorie, il suffit de mettre un hashtag.
+                        </p>
+                      </div>
+                      <div class="correct">
+                        <img src="" alt="correct">
+                        <p class="bold">
+                          J’ai donc proposé un système de hashtag beaucoup plus simple où, lorsqu’on veut que notre question soit référencée dans une catégorie, il suffit de mettre un hashtag.
+                        </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="test__img">
+                  <img src="" alt="">
+              </div>
+                <figure>
+                    <blockquote cite="https://www.huxley.net/bnw/four.html">
+                        <p>People ignore design that ignores people.</p>
+                    </blockquote>
+                    <figcaption>—Frank Chimero</figcaption>
+                </figure>
+          </section>
+          <section class="section section--art-dir">
+              <h2 class="title title--medium">La direction artistique</h2>
+              <p>
+                Le design reste quand même une partie très importante dans la conception du projet.
+                C’est ma partie préférée donc j’ai cherché au préalable quelques inspirations, que ce soit pour les couleurs, la disposition des données ou même pour les images.                
+              </p>
+              <div class="colors">
+                  <div class="color1">#F3FBFB</div>
+                  <div class="color2">#BAE8E8</div>
+                  <div class="color3">#FFD803</div>
+                  <div class="color4">#272343</div>
+              </div>
+              <p>
+                En plus du design, je devais trouver un logo ainsi qu’un nom à mon application ce qui, selon moi, est parfois très long et pas si évident que ça. Après de nombreux essais et croquis, je vous présente musicom accompagné de son logo. Ce dernier représente des yeux (cartoon pour être en cohérence avec la direction graphique) qui signifient la curiosité et la recherche, et une note de musique pour représenter le côté musical de l’application.
+              </p>
+              <img src="" alt="logo-icon">
+          </section>
+          <section class="sectionsection--result">
+              <h2 class="title title--medium">Le résultat final</h2>
+              <div class="img-parallax">
+                  <img src="" alt="Ecrans de l'application">
+              </div>
+          </section>
+          <section class="section section--conclusion">
+              <p class="bold">
+                Ce projet de TFA était une grande expérience pour moi. Aller à la rencontre des utilisateurs m’a permis d’améliorer mon travail et d'être à leur écoute car après tout c’est pour eux qu’on fait ce projet. Ce que j’ai le plus aimé, comme pour chaque projet, c’est l’étape du prototype où l’on fusionne UI et UX. Certes, j’ai eu un peu du mal avec le côté UX mais je me suis vite rendu compte de l’importance des tests utilisateurs pour un résultat concret et optimal.
+              </p>
+          </section>
+          <footer class="section section--footer">
+            <ul class="footer__list">
+              <li class="footer__el"><a href="case-study.html">Case-study</a></li>
+              <li class="footer__el"><a href="ui-kit.html">Ui-kit</a></li>
+              <li class="footer__el"><a href="credits.html">Crédits</a></li>
+            </ul>
+            <small class="date" id="date">©rafko2022-2023</small>
+            <div class="dwt">
+              <img class="logo__dwt" src="assets/images/logo-dwt.svg" alt="logo DWT">
+            </div>
+        </footer>
+      </main>
+</body>
+</html>
