@@ -39,10 +39,10 @@ div.addEventListener('mouseup', () => {
 
 
 //LOADER//
-var $loader = document.querySelector('.loader')
-window.onload = function() {
-  $loader.classList.remove('loader--active')
-};
+// var $loader = document.querySelector('.loader')
+// window.onload = function() {
+//   $loader.classList.remove('loader--active')
+// };
 
 // tl = new TimelineMax({});
 
