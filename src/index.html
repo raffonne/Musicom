@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ASK-IT</title>
+  <title>Case-study MUSICOM</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="">
@@ -18,8 +18,8 @@
   <div class="grab" id="grab"></div>
 
 
-  <header class="section__header" id="navbar">
-    <div class="nav" >
+  <header class="section section--header" id="navbar">
+    <div class="nav">
       <div class="nav__logo">
         <img src="assets/images/logo_askit.svg" alt="logo">
       </div>
@@ -30,8 +30,8 @@
         <a href="https://xd.adobe.com/view/07e8a65e-3bb0-4e35-84a7-22f59e3b2cad-52bb/?fullscreen&hints=off">DOWNLOAD</a>
       </div>
     </div>
-    <!-- <div class="loader loader--active">
-    <div class="loader__tile"></div> -->
+    <div class="loader loader--active">
+    <div class="loader__tile"></div>
   </div>
   </header>
 
@@ -47,7 +47,7 @@
           <span>LISTEN</span><br>
         </h1>
         <p class="hidetext">
-          Ask-it is a music-focused forum application that allows users, through questions/answers, to discover and share their musical knowledge.
+          MUSICOM est une application de forum axée sur la musique qui permet aux utilisateurs, par le biais de questions/réponses, de découvrir et de partager leurs connaissances musicales.
         </p>
         <div class="dl-icons">
           <div class="dl-icons__img">
@@ -62,47 +62,59 @@
           </div>
         </div>
       </div>
-      <div class="section--intro__img">
-          <img class="mockup" src="assets/images/mockup_land.png" alt="perso">
-      </div>
+
       <!-- <div class="arrow_img">
         <img class="arrow" src="assets/images/svg/arrow-01.svg" alt="flèche">
       </div> -->
     </section>
 
 
-    <section class="section section--ask">
-      <div class="ask__text">
-        <h2 class="title title--big">Ask the community for help&nbsp;!</h2>
-        <p>
-          Ask a question that teases you about music and find out what other users have to say on the subject and the music they have to share.
-        </p>
+    <section class="section section--fonctionnalities">
+      <div class="fonc__img">
+        <img class="mockup_fonc" src="assets/images/svg/mockup-fonc.svg" alt="mockup des fonctionnalités">
       </div>
-      <div class="ask__img">
-        <img src="assets/images/mockup_question.png" alt="ASK">
+      <div class="fonc__txt">
+        <div class="fonc fonc--1">
+          <svg width="73" height="73" viewBox="0 0 73 73" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+            <path d="M62.2878 10.6693C56.1112 4.50339 47.9307 0.754267 39.2276 0.10211C30.5246 -0.550047 21.8757 1.93742 14.8507 7.11358C7.82428 12.2902 2.88532 19.8127 0.928991 28.3179C-1.02748 36.8231 0.128528 45.7481 4.18693 53.4728L1.56551 63.2611L1.56606 63.2616C0.95668 65.5514 1.61439 67.9917 3.29145 69.6653C4.96521 71.3424 7.40547 72.0001 9.69513 71.3907L19.4835 68.7693L19.484 68.7698C24.7156 71.5451 30.5499 72.9926 36.4719 72.9838C38.3151 72.9833 40.1559 72.85 41.9802 72.5855C50.9275 71.2268 59.0506 66.5923 64.7744 59.5821C70.4976 52.5712 73.4122 43.6849 72.9529 34.6462C72.4935 25.6078 68.6923 17.0625 62.288 10.6689L62.2878 10.6693ZM66.3357 39.2058C65.7374 45.8889 62.9061 52.1754 58.2982 57.0527C53.6899 61.9299 47.5739 65.1129 40.9348 66.0889C34.2966 67.0648 27.5231 65.7772 21.7071 62.4326C21.2011 62.146 20.6289 61.9976 20.0479 62.0015C19.7613 61.9688 19.4718 61.9688 19.1852 62.0015L8.10252 64.9879L11.0888 53.9052C11.3177 53.0536 11.1983 52.1465 10.7572 51.3833C7.6065 45.9406 6.25441 39.6419 6.89434 33.3857C7.53371 27.1292 10.1324 21.2343 14.3191 16.5414C18.5063 11.8492 24.068 8.5979 30.2106 7.25192C36.3537 5.90597 42.7652 6.53366 48.531 9.04556C54.2965 11.5575 59.1221 15.8259 62.3189 21.242C65.5162 26.6575 66.9216 32.9446 66.3356 39.2055L66.3357 39.2058Z" />
+            <path d="M41.4489 54.734C41.4489 57.4832 39.2202 59.7113 36.4717 59.7113C33.7231 59.7113 31.4945 57.4832 31.4945 54.734C31.4945 51.9855 33.7231 49.7568 36.4717 49.7568C39.2202 49.7568 41.4489 51.9855 41.4489 54.734Z" />
+            <path d="M38.7285 13.2578H34.2157C31.2944 13.2578 28.4919 14.4182 26.4261 16.4842C24.3603 18.55 23.1997 21.3525 23.1997 24.2738V26.5302C23.1997 27.7156 23.8319 28.811 24.8584 29.4037C25.885 29.9965 27.1504 29.9965 28.1769 29.4037C29.2035 28.811 29.8356 27.7156 29.8356 26.5302V24.2738C29.8356 23.1123 30.2973 21.9979 31.1188 21.177C31.9398 20.3554 33.0541 19.8938 34.2156 19.8938H38.7284C40.1105 19.9282 41.3965 20.6087 42.2025 21.7314C43.0091 22.854 43.2429 24.29 42.8341 25.6103C42.4253 26.9307 41.4215 27.9839 40.1222 28.455C38.092 29.1255 36.3255 30.4203 35.0739 32.1541C33.8229 33.8877 33.1509 35.9726 33.1541 38.1107V39.8026C33.1541 40.9881 33.7863 42.0835 34.8128 42.6762C35.8394 43.2689 37.1048 43.2689 38.1313 42.6762C39.1579 42.0835 39.79 40.9881 39.79 39.8026V38.1107C39.79 37.3724 40.025 36.6531 40.4605 36.0565C40.8955 35.4605 41.5093 35.0177 42.2125 34.7928C45.5604 33.6796 48.1758 31.0348 49.2506 27.6746C50.326 24.3145 49.7322 20.6427 47.6519 17.793C45.5721 14.9434 42.2564 13.2579 38.7284 13.2579L38.7285 13.2578Z" />
+            </svg>           
+          <p>
+            Posez une question à la communauté sur le fil d'actualité en rapport avec la musique.
+          </p>
+        </div>
+        <div class="fonc fonc--2">
+          <svg width="80" height="79" viewBox="0 0 80 79" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.5951 11.5488C18.2808 4.87461 27.1357 0.816441 36.5561 0.110527C45.9765 -0.595388 55.3384 2.09712 62.9425 7.69996C70.5481 13.3033 75.8942 21.4459 78.0118 30.6522C80.1295 39.8585 78.8782 49.5192 74.4853 57.8806L77.3228 68.4758L77.3222 68.4764C77.9818 70.9549 77.2699 73.5963 75.4546 75.4079C73.6428 77.2232 71.0014 77.9351 68.523 77.2755L57.9278 74.438L57.9272 74.4386C52.2644 77.4427 45.9492 79.0095 39.539 79C37.5439 78.9994 35.5513 78.855 33.5767 78.5688C23.8919 77.0981 15.0992 72.0815 8.90355 64.4935C2.70856 56.9047 -0.446365 47.2858 0.050827 37.5022C0.548088 27.7186 4.66267 18.4689 11.5948 11.5483L11.5951 11.5488ZM7.21355 42.4376C7.86112 49.6716 10.9258 56.4763 15.9136 61.7556C20.9018 67.0348 27.5219 70.4802 34.7082 71.5366C41.8936 72.5931 49.2255 71.1993 55.5208 67.579C56.0686 67.2687 56.6879 67.1082 57.3169 67.1124C57.6271 67.0769 57.9404 67.0769 58.2507 67.1124L70.2469 70.3449L67.0144 58.3486C66.7667 57.4269 66.896 56.445 67.3734 55.6189C70.7838 49.7276 72.2474 42.9096 71.5547 36.1377C70.8626 29.3655 68.0497 22.9847 63.5179 17.9049C58.9855 12.8259 52.9654 9.30663 46.3165 7.8497C39.6669 6.3928 32.7269 7.07224 26.4859 9.7912C20.2452 12.5102 15.0218 17.1305 11.5615 22.993C8.10054 28.8549 6.57927 35.6602 7.21361 42.4372L7.21355 42.4376Z" />
+            <path d="M16.3851 39.9129C16.3851 42.8886 18.7974 45.3004 21.7725 45.3004C24.7477 45.3004 27.16 42.8886 27.16 39.9129C27.16 36.9378 24.7477 34.5254 21.7725 34.5254C18.7974 34.5254 16.3851 36.9378 16.3851 39.9129Z" />
+            <path d="M34.5258 39.9129C34.5258 42.8886 36.9382 45.3004 39.9133 45.3004C42.8884 45.3004 45.3008 42.8886 45.3008 39.9129C45.3008 36.9378 42.8884 34.5254 39.9133 34.5254C36.9382 34.5254 34.5258 36.9378 34.5258 39.9129Z"/>
+            <path d="M52.6665 39.9129C52.6665 42.8886 55.0789 45.3004 58.054 45.3004C61.0291 45.3004 63.4415 42.8886 63.4415 39.9129C63.4415 36.9378 61.0291 34.5254 58.054 34.5254C55.0789 34.5254 52.6665 36.9378 52.6665 39.9129Z" />
+            </svg>            
+          <p>
+            Répondez à ces questions, soit par un simple paragraphe, soit par un lien avec la musique. 
+          </p>
+        </div>
+        <div class="fonc fonc--3">
+          <svg width="79" height="99" viewBox="0 0 79 99" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+            <path d="M48.7309 64.4697H30.2718C15.6781 64.4697 3.84795 76.2999 3.84795 90.8936C3.84795 95.1221 7.27521 98.5502 11.5045 98.5502H67.5001C71.7286 98.5502 75.1567 95.1221 75.1567 90.8936C75.1567 76.2999 63.3257 64.4697 48.7328 64.4697H48.7309Z" />
+            <path d="M57.3812 36.9827C57.3812 25.2924 49.3699 18.2891 39.4814 18.2891C29.6345 18.2891 21.6232 25.2924 21.6232 36.9827C21.6232 48.6224 29.6345 60.5581 39.4814 60.5581C49.3699 60.5589 57.3812 48.6224 57.3812 36.9827Z" />
+            <path d="M74.0099 32.4956C72.9054 14.3962 57.8734 0 39.5008 0C21.1203 0 6.0843 14.4098 4.98967 32.5207C1.95903 34.9856 0 38.695 0 42.8442C0 49.8548 3.55472 55.7388 10.5639 56.2376H10.8558C11.899 56.2376 14.8954 55.8623 15.6468 55.111C16.5233 54.3179 16.9819 53.2346 16.9819 52.0655V33.6661C16.9819 32.4961 16.5233 31.3703 15.6468 30.5772C14.9789 29.978 14.0902 29.6559 13.1876 29.579C15.5537 17.2009 26.4428 7.81408 39.5005 7.81408C52.5588 7.81408 63.4484 17.203 65.8135 29.5832C64.9019 29.6666 64.0557 29.9846 63.395 30.5782C62.5194 31.3712 62.0599 32.497 62.0599 33.667V52.0664C62.0599 53.2355 62.5194 54.3197 63.395 55.1119C64.1464 55.8207 65.1479 56.2385 66.2329 56.2385H66.5248C73.5346 55.7398 79 49.8557 79 42.8451C79.0008 38.6811 77.0443 34.9612 74.0095 32.4963L74.0099 32.4956Z"/>
+            </svg>
+          <p>
+            Grâce au lecteur, vous pouvez écouter la musique que d'autres utilisateurs ont partagée sans passer par de nombreux liens.
+          </p>
+        </div>
       </div>
     </section>
-
-    <section class="section section--discover">
-      <div class="discover__text">
-        <h2 class="title title--big">Help other users&nbsp;!</h2>
-        <p>
-          Do the same!<br>Answer questions from other app users with your suggestions and in turn share the best songs you listen to.
-        </p>
-      </div>
-      <div class="discover__img">
-        <img src="assets/images/mockup_response.png" alt="Help">
-      </div>
-    </section>
-
 
 
 
     <section class="section section--info">
       <div class="info__text">
-        <h2 class="title title--big">DOWNLOAD NOW</h2>
+        <h2 class="title title--big">Téléchargez Maintenant</h2>
         <p>
-          ASK-IT is exclusively avalaible on IPhone and android ! Go check by yourself!
+          MUSICOM est exclusivement disponible sur IOS et Android ! Allez vérifier par vous-même !
         </p>
         <div class="dl-icons">
           <div class="dl-icons__img">

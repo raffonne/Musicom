@@ -1,10 +1,28 @@
-import { gsap } from "gsap";
+import gsap from "gsap";
 import ScrollTrigger from 'gsap/ScrollTrigger';
-// import { TweenMax } from "gsap/gsap-core";
+
 gsap.registerPlugin(ScrollTrigger);
-// gsap.registerPlugin(TweenMax);
 
 "user strict"
+//ROTATE//
+
+
+
+gsap.from('.mockup_fonc',{
+    rotation:8,
+    scale:1.2,
+    duration:1,
+
+    scrollTrigger:{
+        trigger:"top",
+        start:"top top",
+        scrub:true,
+    }
+})
+
+
+
+
 
 //GRAB//
 const div = document.querySelector('.grab');
@@ -38,18 +56,13 @@ div.addEventListener('mouseup', () => {
 })
 
 
-//LOADER//
-// var $loader = document.querySelector('.loader')
-// window.onload = function() {
-//   $loader.classList.remove('loader--active')
-// };
 
-// tl = new TimelineMax({});
+var $loader = document.querySelector('.loader')
+window.onload = function() {
+  $loader.classList.remove('loader--active')
+};
 
-// tl
-// staggerfrom(".hidetext",1.5,{
-//     y:"100%", ease:Power4.easeOut
-// },"0.15")
+
 
 
 //LA DATE//
