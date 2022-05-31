@@ -35,7 +35,7 @@ $tiles: 1;
   
   .loader {
     position: fixed;
-    z-index: 999;
+    z-index: 100000999;
     top: 0;
     left: 0;
     width: 100vw;
@@ -120,14 +120,16 @@ a{
 
 // HEADER //
 .section--header{
+    z-index: 1000;
     padding: 22px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
 }
 .nav{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 100fr 1fr;
     grid-template-areas:
     "logo . dl";
   }
@@ -135,7 +137,7 @@ a{
     grid-area: dl;
     background-color: var(--color-text);
     color: white;
-    width: 130px;
+    width: 140px;
     height: 35px;
     border-radius: 100px;
     border: solid 1px #000;
@@ -143,8 +145,8 @@ a{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 6px;
-        width:6em;
+        margin-top: 4px;
+        width:4.5em;
         color: white;
         text-decoration: none;
         font-weight: 400;
@@ -158,9 +160,8 @@ a{
 }
 .nav__logo{
     grid-area: logo;
-    img{
-        width: 50%;
-        animation: animEyes linear infinite 4s;
+    .vec{
+        animation: animEyes linear infinite 5s;
     }
 }
 .grab{
@@ -186,7 +187,7 @@ a{
 
 // INTRO //
 .section--intro{
-    margin-bottom: 15em;
+    padding-top: 15em;
 }
 .section--intro__text{
     max-width: 40ch;
@@ -209,16 +210,6 @@ a{
             transform: translatey(0px);
         }
       }
-}
-.section--intro__img{
-    // background-image: url("../assets/images/svg/blob.svg");
-    // background-size:contain;
-    // background-position: top;
-    // background-repeat: no-repeat;
-    .mockup{
-        width: 60%;
-        margin-left: 5em;
-    }
 }
 .section__header{
     margin: 20px;
@@ -303,7 +294,7 @@ a{
     text-transform: uppercase;
     padding-right: 50px;
     padding-left: 50px;
-    font-size: 14px;
+    font-size: 17px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -322,7 +313,64 @@ a{
     width: 4em;
 }
 
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: solid 1px #000;
+    border-radius: 10px;
+    z-index: 10000000;
+    background-color: #BAE8E8;
+    width: 500px;
+    max-width: 80%;
+}
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+.modal-header{
+    padding: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+}
+
+.modal-header .close-button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: bold;
+}
+.open-button{
+    font-family: roc-grotesk, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 17px;
+    font-weight: 300;
+}
+.modal-body{
+    padding: 17px;
+}
+#overlay{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
 
 
 
@@ -334,6 +382,7 @@ section{
     padding-top: 5em;
 }
 .section--intro-cs{
+    padding-top: 25em;
     h1{
         margin-top: 0;
         margin-bottom: 0;
@@ -513,31 +562,7 @@ blockquote p::after {
         grid-area: logo;
     }
 }
-// .color-palette{
-//     grid-area: color;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-evenly;
-// }
-// .colors{
-//     width: 4em;
-//     border: solid 1px #000;
-//     p{
-//         mix-blend-mode: difference;
-//     }
-//     &--1{
-//         background-color: #F3FBFB;
-//     }
-//     &--2{
-//         background-color: #BAE8E8;
-//     }
-//     &--3{
-//         background-color: #FFD803;
-//     }
-//     &--4{
-//         background-color: #272343;
-//     }
-// }
+
 
 .section--conclusion{
     padding-top: 5em;
@@ -558,6 +583,51 @@ blockquote p::after {
     section{
         padding:62px;
     }
+    .title--main{
+        font-size: 5em;
+    }
+
+    .section--intro{
+        padding-top: 20em;
+    }
+    .section--intro__text{
+        .persona{
+            width: 30%;
+        }
+    }
+    .section--fonctionnalities{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "img txt";
+    }
+    .fonc__img{
+        grid-area: img;
+        img{
+            width: 200px;
+        }
+        
+    }
+    .fonc__txt{
+        grid-area: txt;
+    }
+    .info__text{
+        p{
+            max-width: 40ch;
+        }
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
     .section--intro-cs{
         padding-top: 40em;
         p{
@@ -645,6 +715,7 @@ blockquote p::after {
 
     }
     .section--intro{
+        padding-top:6em;
         position: relative;
         margin-top: 0;
         display: grid;
@@ -652,32 +723,27 @@ blockquote p::after {
         grid-template-areas: 
         "a1 a2";
     }
-    .arrow{
-        transform:persp;
-        z-index: 2;
-        position: absolute;
-        width: 10%;
-        bottom: 0;
-        left: 40%;
-        transform: scaleX(-1);
-    }
+    // .arrow{
+    //     transform:persp;
+    //     z-index: 2;
+    //     position: absolute;
+    //     width: 10%;
+    //     bottom: 0;
+    //     left: 40%;
+    //     transform: scaleX(-1);
+    // }
     .section--intro__text{
         margin: 0;
         display: flex;
         flex-direction: column;
         grid-area: a1;
     }
-    .section--intro__img{
-        margin: 0;
-        grid-area: a2;
-        .mockup{
-            width: 50%;
-        }
-    }
+
     .persona{
         display: none;
     }
     .grab{
+        right: 100;
         display: block;
         z-index: 10;
         position: fixed;
@@ -709,20 +775,7 @@ blockquote p::after {
     p{
         max-width: 40ch;
     }
-    .nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .nav__download{
-        height: 40px;
-        width: 160px;
-        background-color: #000;
-        color: #fff;
-        border-radius: 1000px;
-        text-align: center;
-        font-size: 20px;
-    }
+
     .section--ask{
         justify-content: center;
         flex-direction: row-reverse;
@@ -772,15 +825,16 @@ blockquote p::after {
         display: block;
     }
     .section--intro-cs{
+        padding-top: 15em;
+        padding-bottom: 3em;
         background-image: url(../assets/images/mockup_cs.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        padding-top: 15em;
-        padding-bottom: 3em;
         background-position-y: 20%;
-        display: flex;
-        flex-direction: column;
+        animation: scroll 5s alternate linear infinite;
+        transition: background-position 0.35s ease;
     }
+
     .section--concept{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -830,6 +884,7 @@ blockquote p::after {
     .section--art-dir{
         grid-template-columns: 1fr 1fr;
     }
+
 }
 @media (min-width:1900px){
     section{

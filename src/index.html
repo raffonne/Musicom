@@ -16,24 +16,25 @@
 </head>
 <body>
   <div class="grab" id="grab"></div>
-
-
-  <header class="section section--header" id="navbar">
-    <div class="nav">
-      <div class="nav__logo">
-        <img src="assets/images/logo_askit.svg" alt="logo">
-      </div>
-      <!-- <div class="btn--darkmode">
-        <button class="btn"></button>
-      </div> -->
-      <div class="nav__download">
-        <a href="https://xd.adobe.com/view/07e8a65e-3bb0-4e35-84a7-22f59e3b2cad-52bb/?fullscreen&hints=off">DOWNLOAD</a>
-      </div>
-    </div>
-    <div class="loader loader--active">
+  <div class="loader loader--active">
     <div class="loader__tile"></div>
   </div>
-  </header>
+    <header class="section section--header" id="navbar">
+      <div class="nav">
+        <div class="nav__logo">
+          <svg width="75" height="35" viewBox="0 0 75 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="vec vec1" d="M26.8168 14.1584V33.378H1.5V14.1584C1.5 7.16737 7.16737 1.5 14.1584 1.5C21.1495 1.5 26.8168 7.16737 26.8168 14.1584Z" fill="white" stroke="black" stroke-width="3"/>
+            <path class="vec vec2" d="M52.1332 14.1584V33.378H26.8164V14.1584C26.8164 7.16737 32.4838 1.5 39.4748 1.5C46.4659 1.5 52.1332 7.16737 52.1332 14.1584Z" fill="white" stroke="black" stroke-width="3"/>
+            <path class="vec vec3" d="M50.7515 15.1943C50.7515 18.1638 49.8995 20.7885 48.5986 22.6315C47.2949 24.4784 45.6341 25.4354 43.9636 25.4354C42.2931 25.4354 40.6324 24.4784 39.3287 22.6315C38.0278 20.7885 37.1758 18.1638 37.1758 15.1943C37.1758 12.2247 38.0278 9.60002 39.3287 7.75705C40.6324 5.91014 42.2931 4.95312 43.9636 4.95312C45.6341 4.95312 47.2949 5.91014 48.5986 7.75705C49.8995 9.60002 50.7515 12.2247 50.7515 15.1943Z" fill="black" stroke="black" stroke-width="3"/>
+            <path class="vec vec4" d="M25.4351 15.1943C25.4351 18.1638 24.5831 20.7885 23.2822 22.6315C21.9785 24.4784 20.3177 25.4354 18.6472 25.4354C16.9767 25.4354 15.316 24.4784 14.0123 22.6315C12.7114 20.7885 11.8594 18.1638 11.8594 15.1943C11.8594 12.2247 12.7114 9.60002 14.0123 7.75705C15.316 5.91014 16.9767 4.95312 18.6472 4.95312C20.3177 4.95312 21.9785 5.91014 23.2822 7.75705C24.5831 9.60002 25.4351 12.2247 25.4351 15.1943Z" fill="black" stroke="black" stroke-width="3"/>
+            <path class="note" d="M74.2761 0.0110672L62.5515 2.26684C62.2629 2.32201 62.0567 2.57005 62.0624 2.8553V16.9274C61.0767 16.4215 59.9229 16.3212 58.8603 16.6489C57.968 16.8805 57.1738 17.3803 56.5922 18.0769C56.0724 18.6673 55.8794 19.4655 56.0746 20.2189C56.3981 21.3214 57.6311 22 59.0746 22C59.5177 21.9993 59.9588 21.9385 60.3845 21.8194C61.8602 21.4271 62.9962 20.364 63.2146 19.2145C63.2581 18.9962 63.2784 18.774 63.2753 18.5516V7.3551L73.787 5.24448V14.5736C72.8013 14.0676 71.6475 13.9674 70.5849 14.2951C68.6281 14.8365 67.3828 16.441 67.8033 17.865C68.1269 18.9675 69.3598 19.6462 70.8033 19.6462C71.2464 19.6455 71.6875 19.5847 72.1132 19.4656C73.5889 19.0733 74.7249 18.0102 74.9433 16.8606C74.9785 16.6809 74.9974 16.4985 74.9999 16.3155V16.2919V0.599558C75.0033 0.421574 74.9236 0.251693 74.7831 0.137414C74.6425 0.0231344 74.4562 -0.0232755 74.2761 0.0110962L74.2761 0.0110672Z" fill="black"/>
+            </svg>
+        </div>
+        <div class="nav__download">
+          <a href="https://xd.adobe.com/view/07e8a65e-3bb0-4e35-84a7-22f59e3b2cad-52bb/?fullscreen&hints=off">ESSAYER</a>
+        </div>
+      </div>
+    </header>
 
 
   <main class="landing-page">
@@ -47,7 +48,7 @@
           <span>LISTEN</span><br>
         </h1>
         <p class="hidetext">
-          MUSICOM est une application de forum axée sur la musique qui permet aux utilisateurs, par le biais de questions/réponses, de découvrir et de partager leurs connaissances musicales.
+          MUSICOM est un forum axée sur la musique qui permet, par le biais de questions/réponses, de découvrir et de partager la musique.
         </p>
         <div class="dl-icons">
           <div class="dl-icons__img">
@@ -136,16 +137,32 @@
     </section>
 
     <footer class="section section--footer">
-        <ul class="footer__list">
-          <li class="footer__el"><a href="case-study.html">Case-study</a></li>
-          <li class="footer__el"><a href="ui-kit.html">Ui-kit</a></li>
-          <li class="footer__el"><a href="credits.html">Crédits</a></li>
-        </ul>
-        <small class="date" id="date">©rafko2022-2023</small>
-        <div class="dwt">
-          <img class="logo__dwt" src="assets/images/logo-dwt.svg" alt="logo DWT">
-        </div>
-    </footer>
+      <ul class="footer__list">
+        <li class="footer__el"><a href="case-study.html">Case-study</a></li>
+        <li class="footer__el"><a href="ui-kit.html">Ui-kit</a></li>
+        <li class="footer__el"><button class="open-button" data-modal-target="#modal">Crédits</button>
+          <div class="modal" id="modal">
+            <div class="modal-header">
+              <h3 class="title title--medium">Crédits<h3>
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li>Noun Project</li>
+                <li>CodePen</li>
+                <li>Youtube</li>
+                <li>DWT</li>
+              </ul>
+            </div>
+          </div>
+          <div id="overlay"></div></li>
+      </ul>
+      
+      <small class="date" id="date">©rafko2022-2023</small>
+      <div class="dwt">
+        <img class="logo__dwt" src="assets/images/logo-dwt.svg" alt="logo DWT">
+      </div>
+  </footer>
 
   </main>
   
