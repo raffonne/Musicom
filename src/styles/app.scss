@@ -5,16 +5,16 @@ $tiles: 1;
 
 :root {
     --color-text: #0a0a0a;
-    --color-bg: #EBFFFF;
+    --color-bg: #F3FBFB;
   }
   
   [data-theme=light] {
-    --color-text: #0a0a0a;
-    --color-bg: #EBFFFF;
+    --color-text: #000000;
+    --color-bg: #F3FBFB;
   }
   
   [data-theme=dark] {
-    --color-text: #EBFFFF;
+    --color-text: #F3FBFBF;
     --color-text-secondary: #cd23e7;
     --color-bg: #0a0a0a;
     --color-bg-secondary:#000000;
@@ -35,7 +35,7 @@ $tiles: 1;
   
   .loader {
     position: fixed;
-    z-index: 100000999;
+    z-index: 100000;
     top: 0;
     left: 0;
     width: 100vw;
@@ -64,7 +64,7 @@ html{
 }
 
 body{
-    font-size: 18px;
+    font-size: 17px;
     margin: 0;
     padding: 0;
     font-family: roc-grotesk, sans-serif;
@@ -94,7 +94,7 @@ section{
     font-size:24px;
 }
 .title--little{
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
 }
 .span{
@@ -110,11 +110,9 @@ a{
 .bold{
     font-weight: 600;
 }
-// .hidetext{
-//     position: absolute;
-//     z-index: 200;
-//     top: 250px;
-// }
+.hidden{
+    display: none;
+}
 
 
 
@@ -135,26 +133,21 @@ a{
   }
 .nav__download{
     grid-area: dl;
-    background-color: var(--color-text);
-    color: white;
-    width: 140px;
-    height: 35px;
-    border-radius: 100px;
-    border: solid 1px #000;
+    background-color:#000 ;
+    padding: 0.1em 1em 0.1em 1em;
+    border-radius: 155em;
+    color: #fff;
     a{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 4px;
-        width:4.5em;
         color: white;
-        text-decoration: none;
+        font-size: 17px;
         font-weight: 400;
     }
 }
 .nav__download:hover{
     background-color: transparent;
+    border: solid 1px #000;
     a{
+        
         color: black;
     }
 }
@@ -247,11 +240,13 @@ a{
     background-image: url(../assets/images/svg/blob.svg);
     background-size: contain;
     background-repeat: no-repeat;
+    
     img{
         margin-left: 4em;
         transform: rotate(-10deg);
-        width: 250px;
+        width: 200px;
         overflow-x: hidden;
+        
     }
 }
 
@@ -372,6 +367,20 @@ a{
     pointer-events: all;
 }
 
+.credits-list{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.credits-list__el{
+    img{
+        width: 80%;
+    }
+    
+}
+
 
 
 //CASE-STUDY//
@@ -433,7 +442,10 @@ section{
     }
 
 }
-.users__feedbacks{
+.users__feedbacks--desktop{
+    display: none;
+}
+.users__feedbacks--mobile{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-areas:
@@ -451,12 +463,19 @@ section{
     grid-area: txt-square3;
 }
 .txt-square{
+    position: relative;
     font-weight: 500;
     margin-top: 3em;
     padding: 1em;
     background-color:#FFD803;
     border-radius: 20px;
+    border: solid 1px #000;
 }
+
+
+
+
+
 .section--problems{
     margin-top: 5em;
     margin-bottom: 5em;
@@ -474,54 +493,99 @@ section{
         grid-area: p;
     }
 }
-
-.fonctions__el{
-    margin-top: 3em;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    align-items: center;
-    svg{
-        padding: 2em;
-        height: 50px;
-        width: 50px;
-    }
-
+.problems__fonc{
+    margin: 2em 0
 }
+  
 
-.mvp{
+
+
+.card{
+    background-color: #fff;
+    border-radius: .625em;
+    padding: 2em 1em;
+    margin: auto;
+    border: solid 1px #000;
+
+
+    &__heading{
+        color:#272343 ;
+        margin-bottom: 2em;
+    }
+        
+        
+    &__media{
+        margin: auto;
+        margin-bottom: 2em;
+        text-align: center;
+    }
+        
+        
+    &__text{
+        color:#000;
+        margin-bottom: 2em;
+    
+    }
+}
+  
+  
+.button{
+    background-color:#272343 ;
+    padding: .75em 2em .75em;
+    text-decoration: none;
+    border-radius: 1.5em;
+    display: inline-block;
+    color: #fff;
+    margin-bottom: 2em;
+}
+  
+
+.slick-dots{
+    list-style: none;
+    li{
+        display: inline-block;
+        margin: 0 .5em;
+    }
+    span{
+        display: block;
+        background-color:#272343 ;
+        height: .75em;
+        width: .75em;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+  .slick-active{
+    span{
+        background-color:#272343 ;
+    }
+    
+  }
+   
+}
+  
+  
+
+.tester{
+    margin-top:5em;
+    height: 20em;
+    width: 100%;
+    background-image: url(../assets/images/users_test.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
     padding: 0;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-areas:
-    ". p"
-    "img img";
+    grid-area: img;
     img{
-        grid-area: img;
         width: 100%;
     }
-    p{
-        grid-area: p;
-    }
-}
-.upgrades{
-    background-color: #BAE8E8;
-    border-radius: 20px;
-    padding: 1em;
-    margin-top: 266px;
-}
-.wrong, .correct{
-    display: flex;
-    flex-direction: row;
-    img{
-        margin: 1em;
-        width: 55px;
-        height: 55px;
-    }
+    
 }
 
-figure{
-    margin-top: 15em;
-    margin-bottom: 15em;
+.figure{
+    grid-area: fig;
+    margin-top: 10em;
+    margin-bottom: 10em;
 }
 blockquote {
     margin: 0;
@@ -546,9 +610,7 @@ blockquote p::after {
     grid-template-areas:
     "h3 h3"
     ". p1"
-    // "color color"
-    ". p2"
-    "logo logo";
+    ". p2";
     h3{
         grid-area: h3;
     }
@@ -557,9 +619,6 @@ blockquote p::after {
     }
     .p2{
         grid-area: p2;
-    }
-    img{
-        grid-area: logo;
     }
 }
 
@@ -575,6 +634,7 @@ blockquote p::after {
         grid-area: p;
     }
 }
+
 
 @media (min-width:700px){
     body{
@@ -618,23 +678,17 @@ blockquote p::after {
     }
     
 
-
-
-
-
-
-
-
-
-
-
+    //CASESTUDY//
     .section--intro-cs{
         padding-top: 40em;
         p{
             max-width: 50ch;
         }
     }
-    .users__feedbacks{
+    .users__feedbacks--desktop{
+        display: none;
+    }
+    .users__feedbacks--mobile{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
@@ -657,50 +711,39 @@ blockquote p::after {
         padding: 1em;
         background-color:#FFD803;
         border-radius: 20px;
-        filter: drop-shadow(2px 2px 2px #acacac);
     }
+
+
+
+
+
     .section--problems{
         margin-top: 5em;
         margin-bottom: 5em;
     }
-    .problems__txt{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        "h3 h3"
-        ". p";
-        h3{
-            grid-area: h3;
-        }
-        p{
-            grid-area: p;
+    .problems__fonc{
+        display: flex;
+        .card {
+            width: 20em;
         }
     }
-    .problems__fonctions{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-        "fonc1 fonc2 fonc3";
+
+
+
+
+
+
+    .tester{
+        padding: 0;
+        grid-area: img;
+        position: relative;
+        img{
+            width: 100%;
+            
+        }
+        
     }
-    
-    .fonctions__el{
-        max-width: 50ch;
-        svg{
-            padding: 2em;
-            height: 50px;
-            width: 50px;
-        }
-        &--1{
-            grid-area:fonc1;
-        }
-        &--2{
-            grid-area:fonc2;
-        }
-        &--3{
-            grid-area:fonc3;
-        }
-    
-    }
+
     
 }
 
@@ -796,6 +839,10 @@ blockquote p::after {
     }
     .fonc__img{
         grid-area: img;
+        img{
+            width: 250px;
+        }
+        
     }
     .fonc__txt{
         grid-area: txt;
@@ -831,8 +878,7 @@ blockquote p::after {
         background-size: cover;
         background-repeat: no-repeat;
         background-position-y: 20%;
-        animation: scroll 5s alternate linear infinite;
-        transition: background-position 0.35s ease;
+        background-attachment: fixed;
     }
 
     .section--concept{
@@ -847,26 +893,76 @@ blockquote p::after {
     .users__txt{
         grid-template-columns: 1fr 1fr;
     }
-    .users__feedbacks{
-        grid-template-columns: 2fr 0.5fr 2fr;
-        grid-template-areas:
-        "txt-square1 . ."
-        ". . txt-square2"
-        "txt-square3 . .";
+    .users__feedbacks--mobile{
+        display: none;
     }
+    .users__feedbacks--desktop{
+        display: inline-block;
+        position: relative;
+        margin-bottom:500px;
+    }
+    .txt-square{
+        display: flex;
+        position: absolute;
+        transition: transform 100ms ease;
+        will-change: transform;
+    }
+    .txt-square1{
+        top: 200px;
+        left: 0px;
+    }
+    .txt-square2{
+        top: 650px;
+        right:0px; 
+    }
+    .txt-square3{
+        top: 1100px;
+        left: 200px;
+    }
+
+    // .users__feedbacks{
+    //     grid-template-columns: 2fr 0.5fr 2fr;
+    //     grid-template-areas:
+    //     "txt-square1 . ."
+    //     ". . txt-square2"
+    //     "txt-square3 . .";
+    // }
+
+
+
+
+    .section--problems{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "txt slide";
+    }
+    .problems__txt{
+        display: block;
+        grid-area: txt;
+    }
+    .problems__fonc{
+        margin: 0;
+        grid-area: slide;
+    }
+
+
+
+
+
     .section--prototype{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "h3 h3"
-        ". mvp"
+        ". p"
         "img img"
         "fig fig";
         h3{
             grid-area: h3;
         }
-        .mvp{
-            grid-area: mvp;
+        p{
+            grid-area: p;
             display: flex;
         }
         .img{
@@ -884,6 +980,10 @@ blockquote p::after {
     .section--art-dir{
         grid-template-columns: 1fr 1fr;
     }
+    .section--conclusion{
+        grid-template-columns: 1fr 1fr;
+
+    }
 
 }
 @media (min-width:1900px){
@@ -898,4 +998,5 @@ blockquote p::after {
         pointer-events:none;
         margin: 0;
     }
+    
 }

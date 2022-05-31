@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MUSICOM</title>
+  <title>MUSICOM - Case-study</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="">
-
-  <link rel="stylesheet" href="https://use.typekit.net/cag8ble.css">
-  <!-- Meta Partage -->
-  <!-- Favicon -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles/app.css">
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
   <script src="scripts/main.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+
+  <link rel="stylesheet" href="https://use.typekit.net/cag8ble.css">
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Case-study MUSICOM">
+  <meta name="description" content="MUSICOM est un forum axée sur la musique qui permet, par le biais de questions/réponses, de découvrir et de partager la musique.">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.rafko.be/projets/tfa/">
+  <meta property="og:title" content="Case-study MUSICOM">
+  <meta property="og:description" content="MUSICOM est un forum axée sur la musique qui permet, par le biais de questions/réponses, de découvrir et de partager la musique.">
+  <meta property="og:image" content="">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.rafko.be/projets/tfa/">
+  <meta property="twitter:title" content="Case-study MUSICOM">
+  <meta property="twitter:description" content="MUSICOM est un forum axée sur la musique qui permet, par le biais de questions/réponses, de découvrir et de partager la musique.">
+  <meta property="twitter:image" content="">
+
+  
   <link rel="icon" href="assets/images/logo_askit.png">
 </head>
 <body>
@@ -23,13 +41,16 @@
     <header class="section section--header" id="navbar">
       <div class="nav">
         <div class="nav__logo">
-          <svg width="75" height="35" viewBox="0 0 75 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M26.8168 14.1584V33.378H1.5V14.1584C1.5 7.16737 7.16737 1.5 14.1584 1.5C21.1495 1.5 26.8168 7.16737 26.8168 14.1584Z" fill="white" stroke="black" stroke-width="3"/>
-            <path d="M52.1332 14.1584V33.378H26.8164V14.1584C26.8164 7.16737 32.4838 1.5 39.4748 1.5C46.4659 1.5 52.1332 7.16737 52.1332 14.1584Z" fill="white" stroke="black" stroke-width="3"/>
-            <path d="M50.7515 15.1943C50.7515 18.1638 49.8995 20.7885 48.5986 22.6315C47.2949 24.4784 45.6341 25.4354 43.9636 25.4354C42.2931 25.4354 40.6324 24.4784 39.3287 22.6315C38.0278 20.7885 37.1758 18.1638 37.1758 15.1943C37.1758 12.2247 38.0278 9.60002 39.3287 7.75705C40.6324 5.91014 42.2931 4.95312 43.9636 4.95312C45.6341 4.95312 47.2949 5.91014 48.5986 7.75705C49.8995 9.60002 50.7515 12.2247 50.7515 15.1943Z" fill="black" stroke="black" stroke-width="3"/>
-            <path d="M25.4351 15.1943C25.4351 18.1638 24.5831 20.7885 23.2822 22.6315C21.9785 24.4784 20.3177 25.4354 18.6472 25.4354C16.9767 25.4354 15.316 24.4784 14.0123 22.6315C12.7114 20.7885 11.8594 18.1638 11.8594 15.1943C11.8594 12.2247 12.7114 9.60002 14.0123 7.75705C15.316 5.91014 16.9767 4.95312 18.6472 4.95312C20.3177 4.95312 21.9785 5.91014 23.2822 7.75705C24.5831 9.60002 25.4351 12.2247 25.4351 15.1943Z" fill="black" stroke="black" stroke-width="3"/>
-            <path d="M74.2761 0.0110672L62.5515 2.26684C62.2629 2.32201 62.0567 2.57005 62.0624 2.8553V16.9274C61.0767 16.4215 59.9229 16.3212 58.8603 16.6489C57.968 16.8805 57.1738 17.3803 56.5922 18.0769C56.0724 18.6673 55.8794 19.4655 56.0746 20.2189C56.3981 21.3214 57.6311 22 59.0746 22C59.5177 21.9993 59.9588 21.9385 60.3845 21.8194C61.8602 21.4271 62.9962 20.364 63.2146 19.2145C63.2581 18.9962 63.2784 18.774 63.2753 18.5516V7.3551L73.787 5.24448V14.5736C72.8013 14.0676 71.6475 13.9674 70.5849 14.2951C68.6281 14.8365 67.3828 16.441 67.8033 17.865C68.1269 18.9675 69.3598 19.6462 70.8033 19.6462C71.2464 19.6455 71.6875 19.5847 72.1132 19.4656C73.5889 19.0733 74.7249 18.0102 74.9433 16.8606C74.9785 16.6809 74.9974 16.4985 74.9999 16.3155V16.2919V0.599558C75.0033 0.421574 74.9236 0.251693 74.7831 0.137414C74.6425 0.0231344 74.4562 -0.0232755 74.2761 0.0110962L74.2761 0.0110672Z" fill="black"/>
-            </svg>
+          <a href="index.html"><span class="hidden">Retour au menu principal</span>
+            <svg width="75" height="35" viewBox="0 0 75 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.8168 14.1584V33.378H1.5V14.1584C1.5 7.16737 7.16737 1.5 14.1584 1.5C21.1495 1.5 26.8168 7.16737 26.8168 14.1584Z" fill="white" stroke="black" stroke-width="3"/>
+              <path d="M52.1332 14.1584V33.378H26.8164V14.1584C26.8164 7.16737 32.4838 1.5 39.4748 1.5C46.4659 1.5 52.1332 7.16737 52.1332 14.1584Z" fill="white" stroke="black" stroke-width="3"/>
+              <path d="M50.7515 15.1943C50.7515 18.1638 49.8995 20.7885 48.5986 22.6315C47.2949 24.4784 45.6341 25.4354 43.9636 25.4354C42.2931 25.4354 40.6324 24.4784 39.3287 22.6315C38.0278 20.7885 37.1758 18.1638 37.1758 15.1943C37.1758 12.2247 38.0278 9.60002 39.3287 7.75705C40.6324 5.91014 42.2931 4.95312 43.9636 4.95312C45.6341 4.95312 47.2949 5.91014 48.5986 7.75705C49.8995 9.60002 50.7515 12.2247 50.7515 15.1943Z" fill="black" stroke="black" stroke-width="3"/>
+              <path d="M25.4351 15.1943C25.4351 18.1638 24.5831 20.7885 23.2822 22.6315C21.9785 24.4784 20.3177 25.4354 18.6472 25.4354C16.9767 25.4354 15.316 24.4784 14.0123 22.6315C12.7114 20.7885 11.8594 18.1638 11.8594 15.1943C11.8594 12.2247 12.7114 9.60002 14.0123 7.75705C15.316 5.91014 16.9767 4.95312 18.6472 4.95312C20.3177 4.95312 21.9785 5.91014 23.2822 7.75705C24.5831 9.60002 25.4351 12.2247 25.4351 15.1943Z" fill="black" stroke="black" stroke-width="3"/>
+              <path d="M74.2761 0.0110672L62.5515 2.26684C62.2629 2.32201 62.0567 2.57005 62.0624 2.8553V16.9274C61.0767 16.4215 59.9229 16.3212 58.8603 16.6489C57.968 16.8805 57.1738 17.3803 56.5922 18.0769C56.0724 18.6673 55.8794 19.4655 56.0746 20.2189C56.3981 21.3214 57.6311 22 59.0746 22C59.5177 21.9993 59.9588 21.9385 60.3845 21.8194C61.8602 21.4271 62.9962 20.364 63.2146 19.2145C63.2581 18.9962 63.2784 18.774 63.2753 18.5516V7.3551L73.787 5.24448V14.5736C72.8013 14.0676 71.6475 13.9674 70.5849 14.2951C68.6281 14.8365 67.3828 16.441 67.8033 17.865C68.1269 18.9675 69.3598 19.6462 70.8033 19.6462C71.2464 19.6455 71.6875 19.5847 72.1132 19.4656C73.5889 19.0733 74.7249 18.0102 74.9433 16.8606C74.9785 16.6809 74.9974 16.4985 74.9999 16.3155V16.2919V0.599558C75.0033 0.421574 74.9236 0.251693 74.7831 0.137414C74.6425 0.0231344 74.4562 -0.0232755 74.2761 0.0110962L74.2761 0.0110672Z" fill="black"/>
+              </svg>
+          </a>
+          
         </div>
         <div class="nav__download">
           <a href="https://xd.adobe.com/view/07e8a65e-3bb0-4e35-84a7-22f59e3b2cad-52bb/?fullscreen&hints=off">ESSAYER</a>
@@ -74,18 +95,35 @@
                     De nombreuses réponses furent très constructives et m’ont permis d’ouvrir les yeux sur l’importance des tests et de l’avis du public cible. Certaines étaient de très bonnes suggestions que j'utiliserai plus tard dans mon prototype.
                   </p>
               </div>
-              <div class="users__feedbacks">
-                  <div class="txt-square txt-square1">
+              <div class="users__feedbacks--mobile">
+                <div class="txt-square txt-square1">
+                    <p>
+                      De nombreux auditeurs découvrent des nouveaux morceaux grâce aux suggestions Spotify mais trouvent uniquement 1 son qui lui plaît sur les 50 disponibles.
+                    </p>
+                </div>
+                <div class="txt-square txt-square2">
+                  <p>
+                      Certains se posent des questions sur ce vaste monde de la musique mais Internet ne peut répondre à ces dernières.
+                  </p>
+              </div>
+              <div class="txt-square txt-square3">
+                  <p>
+                      Certaines personnes sont très ouvertes et veulent partager leur savoir sur la musique et donner des suggestions à d’autres personnes.
+                  </p>
+              </div>
+            </div>
+              <div class="users__feedbacks--desktop">
+                  <div class="txt-square txt-square1" data-speed="1" data-parallax>
                       <p>
                         De nombreux auditeurs découvrent des nouveaux morceaux grâce aux suggestions Spotify mais trouvent uniquement 1 son qui lui plaît sur les 50 disponibles.
                       </p>
                   </div>
-                  <div class="txt-square txt-square2">
+                  <div class="txt-square txt-square2" data-speed="2" data-parallax>
                     <p>
                         Certains se posent des questions sur ce vaste monde de la musique mais Internet ne peut répondre à ces dernières.
                     </p>
                 </div>
-                <div class="txt-square txt-square3">
+                <div class="txt-square txt-square3" data-speed="3" data-parallax>
                     <p>
                         Certaines personnes sont très ouvertes et veulent partager leur savoir sur la musique et donner des suggestions à d’autres personnes.
                     </p>
@@ -98,88 +136,51 @@
                 <p>
                   Après avoir interviewé mon public cible et après avoir identifié les soucis que rencontrent les gens, j’ai pensé aux fonctionnalités que mon application pourrait avoir pour résoudre ces problèmes.
                 </p>
+
               </div>
-              <!-- <div class="problems__fonctions">
-                  <div class="fonctions">
-                    <div class="fonctions__el fonctions__el--1">
-                      <svg width="80" height="80" viewBox="0 0 80 80" fill="#000" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M62.2878 10.6693C56.1112 4.50339 47.9307 0.754267 39.2276 0.10211C30.5246 -0.550047 21.8757 1.93742 14.8507 7.11358C7.82428 12.2902 2.88532 19.8127 0.928991 28.3179C-1.02748 36.8231 0.128528 45.7481 4.18693 53.4728L1.56551 63.2611L1.56606 63.2616C0.95668 65.5514 1.61439 67.9917 3.29145 69.6653C4.96521 71.3424 7.40547 72.0001 9.69513 71.3907L19.4835 68.7693L19.484 68.7698C24.7156 71.5451 30.5499 72.9926 36.4719 72.9838C38.3151 72.9833 40.1559 72.85 41.9802 72.5855C50.9275 71.2268 59.0506 66.5923 64.7744 59.5821C70.4976 52.5712 73.4122 43.6849 72.9529 34.6462C72.4935 25.6078 68.6923 17.0625 62.288 10.6689L62.2878 10.6693ZM66.3357 39.2058C65.7374 45.8889 62.9061 52.1754 58.2982 57.0527C53.6899 61.9299 47.5739 65.1129 40.9348 66.0889C34.2966 67.0648 27.5231 65.7772 21.7071 62.4326C21.2011 62.146 20.6289 61.9976 20.0479 62.0015C19.7613 61.9688 19.4718 61.9688 19.1852 62.0015L8.10252 64.9879L11.0888 53.9052C11.3177 53.0536 11.1983 52.1465 10.7572 51.3833C7.6065 45.9406 6.25441 39.6419 6.89434 33.3857C7.53371 27.1292 10.1324 21.2343 14.3191 16.5414C18.5063 11.8492 24.068 8.5979 30.2106 7.25192C36.3537 5.90597 42.7652 6.53366 48.531 9.04556C54.2965 11.5575 59.1221 15.8259 62.3189 21.242C65.5162 26.6575 66.9216 32.9446 66.3356 39.2055L66.3357 39.2058Z" />
-                        <path d="M41.4489 54.734C41.4489 57.4832 39.2202 59.7113 36.4717 59.7113C33.7231 59.7113 31.4945 57.4832 31.4945 54.734C31.4945 51.9855 33.7231 49.7568 36.4717 49.7568C39.2202 49.7568 41.4489 51.9855 41.4489 54.734Z"/>
-                        <path d="M38.7285 13.2578H34.2157C31.2944 13.2578 28.4919 14.4182 26.4261 16.4842C24.3603 18.55 23.1997 21.3525 23.1997 24.2738V26.5302C23.1997 27.7156 23.8319 28.811 24.8584 29.4037C25.885 29.9965 27.1504 29.9965 28.1769 29.4037C29.2035 28.811 29.8356 27.7156 29.8356 26.5302V24.2738C29.8356 23.1123 30.2973 21.9979 31.1188 21.177C31.9398 20.3554 33.0541 19.8938 34.2156 19.8938H38.7284C40.1105 19.9282 41.3965 20.6087 42.2025 21.7314C43.0091 22.854 43.2429 24.29 42.8341 25.6103C42.4253 26.9307 41.4215 27.9839 40.1222 28.455C38.092 29.1255 36.3255 30.4203 35.0739 32.1541C33.8229 33.8877 33.1509 35.9726 33.1541 38.1107V39.8026C33.1541 40.9881 33.7863 42.0835 34.8128 42.6762C35.8394 43.2689 37.1048 43.2689 38.1313 42.6762C39.1579 42.0835 39.79 40.9881 39.79 39.8026V38.1107C39.79 37.3724 40.025 36.6531 40.4605 36.0565C40.8955 35.4605 41.5093 35.0177 42.2125 34.7928C45.5604 33.6796 48.1758 31.0348 49.2506 27.6746C50.326 24.3145 49.7322 20.6427 47.6519 17.793C45.5721 14.9434 42.2564 13.2579 38.7284 13.2579L38.7285 13.2578Z" />
-                       </svg>
-                      <p>
-                        La première étant d’avoir la possibilité de poser une question sur un feed en rapport avec la musique.
-                      </p>
+              <div class="problems__fonc">
+                <div class="card">
+                  <div class="card__slider" data-element="carousel">
+                    <div class="card__inner">
+                      <h4 class="card__heading">Poser une question</h4>
+                      <p class="card__text">La première étant d’avoir la possibilité de poser une question sur un feed en rapport avec la musique. Questions qui peuvent être accompagnées d’une image et/ou d’un morceau qu’on peut écouter directement sans passer par des liens.</p>
+                      <a href="#" class="button">voir la fonctionnalité</a>
                     </div>
-                    <div class="fonctions__el fonctions__el--2">
-                      <svg width="80" height="80" viewBox="0 0 80 80" fill="#000" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.5951 11.5488C18.2808 4.87461 27.1357 0.816441 36.5561 0.110527C45.9765 -0.595388 55.3384 2.09712 62.9425 7.69996C70.5481 13.3033 75.8942 21.4459 78.0118 30.6522C80.1295 39.8585 78.8782 49.5192 74.4853 57.8806L77.3228 68.4758L77.3222 68.4764C77.9818 70.9549 77.2699 73.5963 75.4546 75.4079C73.6428 77.2232 71.0014 77.9351 68.523 77.2755L57.9278 74.438L57.9272 74.4386C52.2644 77.4427 45.9492 79.0095 39.539 79C37.5439 78.9994 35.5513 78.855 33.5767 78.5688C23.8919 77.0981 15.0992 72.0815 8.90355 64.4935C2.70856 56.9047 -0.446365 47.2858 0.050827 37.5022C0.548088 27.7186 4.66267 18.4689 11.5948 11.5483L11.5951 11.5488ZM7.21355 42.4376C7.86112 49.6716 10.9258 56.4763 15.9136 61.7556C20.9018 67.0348 27.5219 70.4802 34.7082 71.5366C41.8936 72.5931 49.2255 71.1993 55.5208 67.579C56.0686 67.2687 56.6879 67.1082 57.3169 67.1124C57.6271 67.0769 57.9404 67.0769 58.2507 67.1124L70.2469 70.3449L67.0144 58.3486C66.7667 57.4269 66.896 56.445 67.3734 55.6189C70.7838 49.7276 72.2474 42.9096 71.5547 36.1377C70.8626 29.3655 68.0497 22.9847 63.5179 17.9049C58.9855 12.8259 52.9654 9.30663 46.3165 7.8497C39.6669 6.3928 32.7269 7.07224 26.4859 9.7912C20.2452 12.5102 15.0218 17.1305 11.5615 22.993C8.10054 28.8549 6.57927 35.6602 7.21361 42.4372L7.21355 42.4376Z"/>
-                        <path d="M16.3851 39.9129C16.3851 42.8886 18.7974 45.3004 21.7725 45.3004C24.7477 45.3004 27.16 42.8886 27.16 39.9129C27.16 36.9378 24.7477 34.5254 21.7725 34.5254C18.7974 34.5254 16.3851 36.9378 16.3851 39.9129Z" />
-                        <path d="M34.5258 39.9129C34.5258 42.8886 36.9382 45.3004 39.9133 45.3004C42.8884 45.3004 45.3008 42.8886 45.3008 39.9129C45.3008 36.9378 42.8884 34.5254 39.9133 34.5254C36.9382 34.5254 34.5258 36.9378 34.5258 39.9129Z" />
-                        <path d="M52.6665 39.9129C52.6665 42.8886 55.0789 45.3004 58.054 45.3004C61.0291 45.3004 63.4415 42.8886 63.4415 39.9129C63.4415 36.9378 61.0291 34.5254 58.054 34.5254C55.0789 34.5254 52.6665 36.9378 52.6665 39.9129Z"/>
-                        </svg>
-                      <p>
-                        La deuxième est la possibilité de pouvoir répondre à ces questions, que ce soit avec un simple paragraphe ou avec un lien vers un lien de musique.
-                      </p>
+                    <div class="card__inner">
+                      <h4 class="card__heading">Répondre aux questions</h4>
+                      <p class="card__text">La deuxième est la possibilité de pouvoir répondre à ces questions, que ce soit avec un simple paragraphe ou avec une musique.</p>
+                      <a href="#" class="button">voir la fonctionnalité</a>
                     </div>
-                    <div class="fonctions__el fonctions__el--3">
-                      <svg viexwBox="0 0 505 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M280.002 46.664C341.885 46.664 401.232 71.246 444.992 115.008C488.754 158.766 513.336 218.118 513.336 279.998C513.336 341.878 488.754 401.228 444.992 444.988C401.234 488.75 341.882 513.332 280.002 513.332C218.122 513.332 158.772 488.75 115.012 444.988C71.25 401.23 46.668 341.878 46.668 279.998C46.7383 218.135 71.344 158.828 115.086 115.078C158.832 71.336 218.136 46.73 280.006 46.66L280.002 46.664ZM280.002 0C205.74 0 134.522 29.5 82.012 82.012C29.5 134.52 0 205.742 0 280.002C0 354.262 29.5 425.482 82.012 477.992C134.52 530.504 205.742 560.004 280.002 560.004C354.262 560.004 425.482 530.504 477.992 477.992C530.504 425.484 560.004 354.262 560.004 280.002C560.004 205.742 530.504 134.522 477.992 82.012C425.484 29.5 354.262 0 280.002 0ZM210.002 396.66V163.33L420.002 283.4L210.002 396.66Z" fill="black"/>
-                        </svg>
-                        
-                      <p>
-                        Grâce au lecteur, vous pouvez écouter la musique que d'autres utilisateurs ont partagée sans passer par de nombreux liens.
-                      </p>
+                    <div class="card__inner">
+                      <h4 class="card__heading">Ecoutez vos découvertes sans difficultés</h4>
+                      <p class="card__text">Grâce au lecteur de musique, vous pouvez écouter la musique que d'autres utilisateurs ont partagé sans passer par des liens. Vous pouvez également l'ajouter à votre réponse.</p>
+                      <a href="#" class="button">Sign up</a>
                     </div>
                   </div>
-              </div> -->
+                </div>
+              </div>
+              
           </section>
           <section class="section section--prototype">
-              <h3 class="title title--medium">Création du prototype</h3>
-              <div class="mvp">
-                  <p>
-                    C’est à présent qu’entre en jeu le MVP, autrement dit, le “produit minimum viable”. Il s’agit d’une première version de prototype, pouvant être améliorée par le suite grâce aux retours des tests utilisateurs. Celle-ci est sans design, sans image et en niveau de gris, ce qui permet de vérifier l’accessibilité de l’application sans que le “testeur” ne soit influencé par l’aspect visuel.
-                    Après avoir effectué les tests utilisateurs, j’ai ressorti plusieurs éléments intéressants à améliorer :
-                  </p>
-              </div>
-              <!-- <div class="upgrades">
-                  <div class="filters">
-                      <div class="wrong">
-                        <img src="assets/images/svg/wrong.svg" alt="wrong">
-                        <p class="bold">
-                          Le système de filtrage qui était un peu trop présent et finalement pas très intuitif.
-                        </p>
-                      </div>
-                      <div class="correct">
-                        <img src="assets/images/svg/correct.svg" alt="correct">
-                        <p class="bold">
-                            J’ai donc proposé un système de hashtag beaucoup plus simple où, lorsqu’on veut que notre question soit référencée dans une catégorie, il suffit de mettre un hashtag.
-                        </p>
-                      </div>
-                  </div>
-                  <div class="account">
-                      <div class="wrong">
-                        <img src="assets/images/svg/wrong.svg" alt="wrong">
-                        <p class="bold">
-                          J’ai donc proposé un système de hashtag beaucoup plus simple où, lorsqu’on veut que notre question soit référencée dans une catégorie, il suffit de mettre un hashtag.
-                        </p>
-                      </div>
-                      <div class="correct">
-                        <img src="assets/images/svg/correct.svg" alt="correct">
-                        <p class="bold">
-                          J’ai donc proposé un système de hashtag beaucoup plus simple où, lorsqu’on veut que notre question soit référencée dans une catégorie, il suffit de mettre un hashtag.
-                        </p>
-                      </div>
-                  </div>
-              </div> -->
 
-                <figure>
-                    <blockquote cite="https://www.huxley.net/bnw/four.html">
-                        <p>People ignore design that ignores people.</p>
-                    </blockquote>
-                    <figcaption>—Frank Chimero</figcaption>
-                </figure>
+              <h3 class="title title--medium">Création du prototype</h3>
+
+              <p>
+                C’est à présent qu’entre en jeu le MVP, autrement dit, le “produit minimum viable”. Il s’agit d’une première version de prototype, pouvant être améliorée par le suite grâce aux retours des tests utilisateurs. Celle-ci est sans design, sans image et en niveau de gris, ce qui permet de vérifier l’accessibilité de l’application sans que le “testeur” ne soit influencé par l’aspect visuel.
+                Après avoir effectué les tests utilisateurs, j’ai ressorti plusieurs éléments intéressants à améliorer&nbsp;:
+              </p>
+
+              <div class="tester"></div>
+
+              <figure class="figure">
+                <blockquote cite="https://www.huxley.net/bnw/four.html">
+                    <p>People ignore design that ignores people.</p>
+                </blockquote>
+                <figcaption>—Frank Chimero</figcaption>
+              </figure>
+
           </section>
+
           <section class="section section--art-dir">
               <h3 class="title title--medium">La direction artistique</h3>
               <p class="p1">
@@ -212,15 +213,15 @@
                     <button data-close-button class="close-button">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <ul>
-                      <li>Noun Project</li>
-                      <li>CodePen</li>
-                      <li>Youtube</li>
-                      <li>DWT</li>
+                    <ul class="credits-list">
+                      <li class="credits-list__el"><a href="https://thenounproject.com/"><img src="assets/images/svg/noun-project-logo.svg" alt="logo noun project"></a></li>
+                      <li class="credits-list__el"><a href="https://codepen.io/"><img src="assets/images/svg/codepen-logo.svg" alt="logo codepen"></a></li>
+                      <li class="credits-list__el"><a href="https://www.youtube.com/"><img src="assets/images/svg/youtube-logo.svg" alt="logo de youtube"></a></li>
                     </ul>
                   </div>
                 </div>
-                <div id="overlay"></div></li>
+                <div id="overlay"></div>
+              </li>
             </ul>
             
             <small class="date" id="date">©rafko2022-2023</small>
@@ -229,5 +230,6 @@
             </div>
         </footer>
       </main>
+      
 </body>
 </html>
