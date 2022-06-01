@@ -1,6 +1,6 @@
 import gsap from "gsap";
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import $ from 'jquery'
+import $ from 'jquery';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,9 +10,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 gsap.from('.mockup_fonc',{
-    rotation:8,
-    scale:1.2,
-    duration:1,
+    rotation:10,
+    scale:1.5,
 
     scrollTrigger:{
         trigger:"top",
@@ -111,10 +110,10 @@ date.innerHTML = "©rafko2022-" + String(year + 1);
 
 
 
+
+
 var windowSel = $(window);
 
-var parallaxItem = '[data-parallax]';
-parallaxInit(parallaxItem);
 // parallax
 function parallax(selector, speed) {
   var movement = -(windowSel.scrollTop() * (speed / 10));
@@ -138,19 +137,21 @@ function parallaxInit(selector) {
   }
 }
 
+var parallaxItem = '[data-parallax]';
+parallaxInit(parallaxItem);
 
 
 
-//CARD Slider//
-$('[data-element="carousel"]').slick({
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  dots: true,
-  arrows: false,
-  customPaging : function(slider, i) {
-    return '<span></span>';
-  },
-});
+// //CARD Slider//
+// $('[data-element="carousel"]').slick({
+//   infinite: true,
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   dots: true,
+//   arrows: false,
+//   customPaging : function(slider, i) {
+//     return '<span></span>';
+//   },
+// });
 
 

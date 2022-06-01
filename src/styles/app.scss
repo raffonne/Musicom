@@ -64,6 +64,22 @@ html{
     
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #000; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
 body{
     font-size: 17px;
     margin: 0;
@@ -74,20 +90,20 @@ body{
     background-color: var(--color-bg);
 }
 section{
-    max-width: 1800px;
+    max-width: 2000px;
     padding: 0px 16px 0px 16px;
 }
 .title{
     line-height: 1.125;
 }
 .title--main{
-    font-family: "migra";
-    font-size: 68px;
+    font-family: "roc-grotesk";
+    font-size: 55px;
     
 }
 .title--big{
     font-family: roc-grotesk, sans-serif;
-    font-size:36px;
+    font-size:31px;
     font-weight: 700;
 }
 .title--medium{
@@ -113,6 +129,10 @@ a{
 }
 .hidden{
     display: none;
+}
+.title-main-span{
+    -webkit-text-stroke: 1px #000;
+    -webkit-text-fill-color: #FFD803;
 }
 
 
@@ -246,8 +266,6 @@ a{
         margin-left: 4em;
         transform: rotate(-10deg);
         width: 200px;
-        overflow-x: hidden;
-        
     }
 }
 
@@ -257,6 +275,7 @@ a{
     align-items: center;
     svg{
         padding: 2em;
+        fill: #000;
     }
 }
 
@@ -264,10 +283,6 @@ a{
 
 .section--info{
     margin-top: 6em;
-    background-image: url(../assets/images/svg/wave.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom;
 }
 .mockup_footer{
     width: 100%;
@@ -284,7 +299,6 @@ a{
 .section--footer{
     display: flex;
     flex-direction: column;
-    background-color: #FFD803;
 }
 .footer__list{
     text-transform: uppercase;
@@ -301,11 +315,11 @@ a{
     justify-content: center;
 }
 .dwt{
+    margin: 1em;
     display: flex;
     justify-content: center;
 }
 .logo__dwt{
-    padding: 2em;
     width: 4em;
 }
 
@@ -508,6 +522,10 @@ section{
     margin: auto;
     border: solid 1px #000;
 
+    &__inner{
+        outline: 0;
+    }
+    
 
     &__heading{
         color:#272343 ;
@@ -515,11 +533,11 @@ section{
     }
         
         
-    &__media{
-        margin: auto;
-        margin-bottom: 2em;
-        text-align: center;
-    }
+    // &__media{
+    //     margin: auto;
+    //     margin-bottom: 2em;
+    //     text-align: center;
+    // }
         
         
     &__text{
@@ -549,7 +567,7 @@ section{
     }
     span{
         display: block;
-        background-color:#272343 ;
+        background-color:#ffffff ;
         height: .75em;
         width: .75em;
         border-radius: 50%;
@@ -571,14 +589,18 @@ section{
     margin-top:5em;
     height: 20em;
     width: 100%;
-    background-image: url(../assets/images/users_test.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
     padding: 0;
     grid-area: img;
+    position: relative;
+    overflow: hidden;
     img{
         width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        object-fit: cover;
+        height: 150%;
     }
     
 }
@@ -797,18 +819,9 @@ blockquote p::after {
         background-image: url(../assets/images/svg/sun.svg);
         background-size: contain;
         background-repeat: no-repeat;
-        animation: rotating 10s linear infinite ;
-    }
-    @keyframes rotating {
-        from{
-            transform: rotate(0deg);
-        }
-        to{
-            transform: rotate(360deg);
-        }
     }
     .title--main{
-        font-size:4em;
+        font-size:3em;
         color:#000;
         line-height: 1;
         pointer-events:none;
@@ -818,6 +831,13 @@ blockquote p::after {
     
     p{
         max-width: 40ch;
+    }
+    .dl-icons__img{
+        margin-right: 20px;
+        img{
+            height: 60px;
+            width: 200px;
+        }
     }
 
     .section--ask{
@@ -859,13 +879,24 @@ blockquote p::after {
     .section--footer{
         padding-right: 140px;
         padding-left: 140px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "list rafko dwt";
     }
-    .footer__el{
-        padding-right: 2em;
+    .footer__list{
+        grid-area: list;
+        align-items: end;
+    }
+    .date{
+        margin: 17px;
+        grid-area: rafko;
+        align-items: end;
+    }
+    .dwt{
+        grid-area: dwt;
+        align-items: end;
+        justify-content: flex-end;
     }
 
     //CASE-STUDY//
@@ -878,7 +909,6 @@ blockquote p::after {
         background-image: url(../assets/images/mockup_cs.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        background-position-y: 20%;
         background-attachment: fixed;
     }
 
@@ -993,11 +1023,16 @@ blockquote p::after {
         padding-left: 15em;
     }
     .title--main{
-        font-size:6em;
+        font-size:4em;
         color:#000;
         line-height: 1;
         pointer-events:none;
         margin: 0;
+        font-family: "roc-grotesk";
+    }
+    .section--intro{
+        padding-top: 10em;
+        padding-bottom: 5em;
     }
     
 }
