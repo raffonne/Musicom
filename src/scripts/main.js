@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import $ from 'jquery'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -113,7 +114,7 @@ $('[data-element="carousel"]').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   dots: true,
-  arrows: false,
+  arrows: true,
   customPaging : function(slider, i) {
     return '<span></span>';
   },
