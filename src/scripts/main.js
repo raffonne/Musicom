@@ -108,17 +108,17 @@ let date = document.querySelector("#date");
 date.innerHTML = "©rafko2022-" + String(year + 1);
 
 
-//CARD Slider//
-$('[data-element="carousel"]').slick({
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  dots: true,
-  arrows: true,
-  customPaging : function(slider, i) {
-    return '<span></span>';
-  },
-});
+// //CARD Slider//
+// $('[data-element="carousel"]').slick({
+//   infinite: true,
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   dots: true,
+//   arrows: true,
+//   customPaging : function(slider, i) {
+//     return '<span></span>';
+//   },
+// });
 
 var windowSel = $(window);
 
