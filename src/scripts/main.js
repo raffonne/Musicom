@@ -1,6 +1,7 @@
 import gsap from "gsap";
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import $ from 'jquery';
+import Swiper from 'swiper';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -19,6 +20,40 @@ gsap.from('.mockup_fonc',{
         scrub:true,
     }
 })
+
+var windowSel = $(window);
+
+// parallax
+function parallax(selector, speed) {
+  var movement = -(windowSel.scrollTop() * (speed / 10));
+  $(selector).css('transform', 'translate3d(0,' + movement + 'px, 0');
+}
+
+// parallax init
+function parallaxInit(selector) {
+  if ($(selector).length) {
+    $(selector).each(function(i, el) {
+      var speed = $(el).attr('data-speed');
+
+
+      // init function on scroll
+      windowSel.on('scroll', function() {
+        parallax($(el), speed);
+      });
+    });
+  }
+}
+
+var parallaxItem = '[data-parallax]';
+parallaxInit(parallaxItem);
+
+// according to effect from this website: http://www.techstyle.com/
+
+
+
+
+
+
 
 
 //POP-UP Crédits//
@@ -93,10 +128,10 @@ div.addEventListener('mouseup', () => {
 
 
 
-var $loader = document.querySelector('.loader')
-window.onload = function() {
-  $loader.classList.remove('loader--active')
-};
+// var $loader = document.querySelector('.loader')
+// window.onload = function() {
+//   $loader.classList.remove('loader--active')
+// };
 
 
 
@@ -108,50 +143,5 @@ date.innerHTML = "©rafko2022-" + String(year + 1);
 
 
 
-
-
-
-
-var windowSel = $(window);
-
-// parallax
-function parallax(selector, speed) {
-  var movement = -(windowSel.scrollTop() * (speed / 10));
-  $(selector).css('transform', 'translate3d(0,' + movement + 'px, 0');
-}
-
-// parallax init
-function parallaxInit(selector) {
-  if ($(selector).length && window.innerWidth > 1024 && navigator.userAgent.match(/iPad/i) == null) {
-    $(selector).each(function(i, el) {
-      var speed = $(el).attr('data-speed');
-
-      //init function on load
-      parallax($(el), speed);
-
-      // init function on scroll
-      windowSel.on('scroll', function() {
-        parallax($(el), speed);
-      });
-    });
-  }
-}
-
-var parallaxItem = '[data-parallax]';
-parallaxInit(parallaxItem);
-
-
-
-// //CARD Slider//
-// $('[data-element="carousel"]').slick({
-//   infinite: true,
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   dots: true,
-//   arrows: false,
-//   customPaging : function(slider, i) {
-//     return '<span></span>';
-//   },
-// });
 
 

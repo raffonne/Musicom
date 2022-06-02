@@ -6,14 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles/app.css">
-  <!-- <link rel="stylesheet" type="text/css" href="assets/slick-1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="assets/slick-1.8.1/slick/slick-theme.css"/> -->
   <script src="scripts/main.js" defer></script>
-  <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="assets/slick-1.8.1/slick/slick.min.js"></script> -->
-
   <link rel="stylesheet" href="https://use.typekit.net/cag8ble.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Primary Meta Tags -->
   <meta name="title" content="Case-study MUSICOM">
   <meta name="description" content="MUSICOM est un forum axée sur la musique qui permet, par le biais de questions/réponses, de découvrir et de partager la musique.">
@@ -33,9 +28,9 @@
 </head>
 <body>
   <div class="grab" id="grab"></div>
-  <div class="loader loader--active">
+  <!-- <div class="loader loader--active">
     <div class="loader__tile"></div>
-  </div>
+  </div> -->
     <header class="section section--header" id="navbar">
       <div class="nav">
         <div class="nav__logo">
@@ -127,6 +122,7 @@
                     </p>
                 </div>
               </div>
+
           </section>
           <section class="section section--problems">
               <div class="problems__txt">
@@ -134,31 +130,32 @@
                 <p>
                   Après avoir interviewé mon public cible et après avoir identifié les soucis que rencontrent les gens, j’ai pensé aux fonctionnalités que mon application pourrait avoir pour résoudre ces problèmes.
                 </p>
-
               </div>
-
               <div class="problems__fonc">
-                <div class="card">
-                  <div class="card__slider" data-element="carousel">
-                    <div class="card__inner">
-                      <h4 class="card__heading">Poser une question</h4>
-                      <p class="card__text">La première étant d’avoir la possibilité de poser une question sur un feed en rapport avec la musique. Questions qui peuvent être accompagnées d’une image et/ou d’un morceau qu’on peut écouter directement sans passer par des liens.</p>
-                      <a href="#" class="button">voir la fonctionnalité</a>
-                    </div>
-                    <div class="card__inner">
-                      <h4 class="card__heading">Répondre aux questions</h4>
-                      <p class="card__text">La deuxième est la possibilité de pouvoir répondre à ces questions, que ce soit avec un simple paragraphe ou avec une musique.</p>
-                      <a href="#" class="button">voir la fonctionnalité</a>
-                    </div>
-                    <div class="card__inner">
-                      <h4 class="card__heading">Ecoutez vos découvertes sans difficultés</h4>
-                      <p class="card__text">Grâce au lecteur de musique, vous pouvez écouter la musique que d'autres utilisateurs ont partagé sans passer par des liens. Vous pouvez également l'ajouter à votre réponse.</p>
-                      <a href="#" class="button">Sign up</a>
+                <div class="container">
+                  <div class="card">
+                    <div class="card__slider" data-element="carousel">
+                      <div class="card__inner">
+                        <h2 class="title title--big">Poser une question</h2>
+                        <p class="card__text">La première étant d’avoir la possibilité de poser une question sur un feed en rapport avec la musique. Questions qui peuvent être accompagnées d’une image et/ou d’un morceau qu’on peut écouter directement sans passer par des liens.</p>
+                        <a href="#" class="button">voir la fonctionnalité</a>
+                      </div>
+                      <div class="card__inner">
+                        <h2 class="title title--big">Répondre aux questions</h2>
+                        <p class="card__text">La deuxième est la possibilité de pouvoir répondre à ces questions, que ce soit avec un simple paragraphe ou avec une musique.</p>
+                        <a href="#" class="button">voir la fonctionnalité</a>
+                      </div>
+                      <div class="card__inner">
+                        <h2 class="title title--big">Ecoutez vos découvertes sans difficultés</h2>
+                        <p class="card__text">Grâce au lecteur de musique, vous pouvez écouter la musique que d'autres utilisateurs ont partagé sans passer par des liens. Vous pouvez également l'ajouter à votre réponse.</p>
+                        <a href="#" class="button">Sign up</a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               
+
           </section>
           <section class="section section--prototype">
 
@@ -231,6 +228,27 @@
             </div>
         </footer>
       </main>
-      
+
+
+  
+      <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+      <script type="text/javascript">
+        $('[data-element="carousel"]').slick({
+      infinite: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: false,
+      customPaging : function(slider, i) {
+        return '<span></span>';
+      },
+    });
+      </script>
 </body>
 </html>
