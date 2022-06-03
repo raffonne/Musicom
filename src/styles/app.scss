@@ -297,6 +297,49 @@ a{
     margin-top: 50px;
 }
 
+
+.commentaires{
+    margin-top: 2em;
+    padding: 1em;
+    border-radius: 20px;
+    border: solid 1px #000;
+    background-color: #BAE8E8;
+    position: relative;
+    .commentaire--1{
+        grid-area: com1;
+    }
+    .commentaire--2{
+        grid-area: com2;
+    }
+    .commentaire--3{
+        grid-area: com3;
+    }
+
+}
+.user__img{
+    border: solid 1px #000;
+    position: absolute;
+    height: 3em;
+    width: 3em;
+    background-color: grey;
+    border-radius:50%;
+    left: 1em;
+    top: -25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //FOOTER//
 
 .section--footer{
@@ -751,6 +794,19 @@ blockquote p::after {
             max-width: 40ch;
         }
     }
+
+    .section--commentaires{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "com1 ."
+        ". com2"
+        "com3 .";
+    }
+    .commentaires{
+        height: 100%;
+        margin: 1em;
+    }
     
 
     //CASESTUDY//
@@ -966,7 +1022,7 @@ blockquote p::after {
     .section--intro-cs{
         padding-top: 15em;
         padding-bottom: 3em;
-        background-image: url(../assets/images/mockup_css.jpg);
+        background-image: url(../assets/images/IMG_1497.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
