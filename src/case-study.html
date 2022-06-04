@@ -1,254 +1,247 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>MUSICOM - Case-study</title>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles/app.css">
-  <script src="scripts/main.js" defer></script>
-  <link rel="stylesheet" href="https://use.typekit.net/cag8ble.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Primary Meta Tags -->
-  <meta name="title" content="Case-study MUSICOM">
-  <meta name="description" content="MUSICOM est un forum axée sur la musique qui permet, par le biais de questions/réponses, de découvrir et de partager la musique.">
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.rafko.be/projets/tfa/">
-  <meta property="og:title" content="Case-study MUSICOM">
-  <meta property="og:description" content="MUSICOM est un forum axée sur la musique qui permet, par le biais de questions/réponses, de découvrir et de partager la musique.">
-  <meta property="og:image" content="">
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://www.rafko.be/projets/tfa/">
-  <meta property="twitter:title" content="Case-study MUSICOM">
-  <meta property="twitter:description" content="MUSICOM est un forum axée sur la musique qui permet, par le biais de questions/réponses, de découvrir et de partager la musique.">
-  <meta property="twitter:image" content="">
-  <link rel="icon" href="assets/images/logo_askit.png">
-</head>
-<body>
-  <div class="grab" id="grab"></div>
-  <!-- <div class="loader loader--active">
-    <div class="loader__tile"></div>
-  </div> -->
-    <header class="section section--header" id="navbar">
-      <div class="nav">
-        <div class="nav__logo">
-          <a href="index.html"><span class="hidden">Retour au menu principal</span>
-            <svg width="75" height="35" viewBox="0 0 75 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M26.8168 14.1584V33.378H1.5V14.1584C1.5 7.16737 7.16737 1.5 14.1584 1.5C21.1495 1.5 26.8168 7.16737 26.8168 14.1584Z" fill="white" stroke="black" stroke-width="3"/>
-              <path d="M52.1332 14.1584V33.378H26.8164V14.1584C26.8164 7.16737 32.4838 1.5 39.4748 1.5C46.4659 1.5 52.1332 7.16737 52.1332 14.1584Z" fill="white" stroke="black" stroke-width="3"/>
-              <path d="M50.7515 15.1943C50.7515 18.1638 49.8995 20.7885 48.5986 22.6315C47.2949 24.4784 45.6341 25.4354 43.9636 25.4354C42.2931 25.4354 40.6324 24.4784 39.3287 22.6315C38.0278 20.7885 37.1758 18.1638 37.1758 15.1943C37.1758 12.2247 38.0278 9.60002 39.3287 7.75705C40.6324 5.91014 42.2931 4.95312 43.9636 4.95312C45.6341 4.95312 47.2949 5.91014 48.5986 7.75705C49.8995 9.60002 50.7515 12.2247 50.7515 15.1943Z" fill="black" stroke="black" stroke-width="3"/>
-              <path d="M25.4351 15.1943C25.4351 18.1638 24.5831 20.7885 23.2822 22.6315C21.9785 24.4784 20.3177 25.4354 18.6472 25.4354C16.9767 25.4354 15.316 24.4784 14.0123 22.6315C12.7114 20.7885 11.8594 18.1638 11.8594 15.1943C11.8594 12.2247 12.7114 9.60002 14.0123 7.75705C15.316 5.91014 16.9767 4.95312 18.6472 4.95312C20.3177 4.95312 21.9785 5.91014 23.2822 7.75705C24.5831 9.60002 25.4351 12.2247 25.4351 15.1943Z" fill="black" stroke="black" stroke-width="3"/>
-              <path d="M74.2761 0.0110672L62.5515 2.26684C62.2629 2.32201 62.0567 2.57005 62.0624 2.8553V16.9274C61.0767 16.4215 59.9229 16.3212 58.8603 16.6489C57.968 16.8805 57.1738 17.3803 56.5922 18.0769C56.0724 18.6673 55.8794 19.4655 56.0746 20.2189C56.3981 21.3214 57.6311 22 59.0746 22C59.5177 21.9993 59.9588 21.9385 60.3845 21.8194C61.8602 21.4271 62.9962 20.364 63.2146 19.2145C63.2581 18.9962 63.2784 18.774 63.2753 18.5516V7.3551L73.787 5.24448V14.5736C72.8013 14.0676 71.6475 13.9674 70.5849 14.2951C68.6281 14.8365 67.3828 16.441 67.8033 17.865C68.1269 18.9675 69.3598 19.6462 70.8033 19.6462C71.2464 19.6455 71.6875 19.5847 72.1132 19.4656C73.5889 19.0733 74.7249 18.0102 74.9433 16.8606C74.9785 16.6809 74.9974 16.4985 74.9999 16.3155V16.2919V0.599558C75.0033 0.421574 74.9236 0.251693 74.7831 0.137414C74.6425 0.0231344 74.4562 -0.0232755 74.2761 0.0110962L74.2761 0.0110672Z" fill="black"/>
-              </svg>
-          </a>
-          
-        </div>
-        <div class="nav__download">
-          <a href="https://xd.adobe.com/view/07e8a65e-3bb0-4e35-84a7-22f59e3b2cad-52bb/?fullscreen&hints=off">ESSAYER</a>
-        </div>
-      </div>
-    </header>
-
-      <main class="case-study">
-        
-          <section class="section section--intro-cs ">
-                <h3 class="title title--medium">case-study de l'application</h3>
-                <h1 class="title title--main">MUSICOM</h1>
-                <p>
-                 Musicom est une application de forum axée sur la musique qui permet aux utilisateurs, par le biais de questions/réponses, de découvrir et de partager leurs connaissances musicales.
-                </p>
-
-               
-          </section>
-          <section class="section section--intro-projet">
-              <p class="bold">
-                Le voilà, le dernier projets.
-                Contrairement aux autres travaux qu’on a déjà effectués, celui-là est assez libre dans l’ensemble. Et pour ce dernier, j’ai décidé de partir sur un sujet qui touchera énormément un très vaste public.
-              </p>
-          </section>
-          <section class="section section--concept">
-
-              <h3 class="title title--medium">EXPLICATION DU CONCEPT</h3>
-              <p>
-                Lorsqu’on écoute beaucoup de musique et qu’on a une centaine d’heures d’écoute sur sa playlist Spotify, eh bien on s’en lasse parfois et on a envie de découvrir de nouvelles choses, de nouveaux genres, de nouveaux artistes. Même si certains morceaux sont intemporels et peuvent être écoutés en boucle, on sent parfois ce manque de nouveautés parmi les auditeurs interviewés.
-              </p>
-              <p class="bold">
-                Je me suis donc focalisé sur cette problématique principale et j’ai émis l’hypothèse que les personnes qui écoutent beaucoup la musique seraient intéressées par un forum mobile où l’on peut découvrir de nouvelles chansons grâce à des questions/réponses entre utilisateurs.
-              </p>
-          </section>
-          <section class="section section--users">
-              <div class="users__txt">
-                <h3 class="title title--medium">Rencontre avec les utilisateurs</h3>
-                <p>
-                    Pour vérifier si j’étais sur la bonne piste et si le public cible était intéressé par ce genre de service, j’ai partagé un sondage grâce auquel j’ai recueilli des informations importantes pour la suite du développement de mon projet.
-                  </p>
-                  <p class="concl">
-                    De nombreuses réponses furent très constructives et m’ont permis d’ouvrir les yeux sur l’importance des tests et de l’avis du public cible. Certaines étaient de très bonnes suggestions que j'utiliserai plus tard dans mon prototype.
-                  </p>
-              </div>
-              <div class="users__feedbacks--mobile">
-                <div class="txt-square txt-square1">
-                    <p>
-                      De nombreux auditeurs découvrent des nouveaux morceaux grâce aux suggestions Spotify mais trouvent uniquement 1 son qui lui plaît sur les 50 disponibles.
-                    </p>
-                </div>
-                <div class="txt-square txt-square2">
-                  <p>
-                      Certains se posent des questions sur ce vaste monde de la musique mais Internet ne peut répondre à ces dernières.
-                  </p>
-              </div>
-              <div class="txt-square txt-square3">
-                  <p>
-                      Certaines personnes sont très ouvertes et veulent partager leur savoir sur la musique et donner des suggestions à d’autres personnes.
-                  </p>
-              </div>
+   <head>
+      <title>MUSICOM - Case-study</title>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="styles/app.css">
+      <script src="scripts/main.js" defer></script>
+      <link rel="stylesheet" href="https://use.typekit.net/cag8ble.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- Primary Meta Tags -->
+      <meta name="title" content="Case-study MUSICOM">
+      <meta name="description" content="MUSICOM est un forum axée sur la musique qui permet, par le biais de questions/réponses, de découvrir et de partager la musique.">
+      <!-- Open Graph / Facebook -->
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://www.rafko.be/projets/tfa/">
+      <meta property="og:title" content="Case-study MUSICOM">
+      <meta property="og:description" content="MUSICOM est un forum axée sur la musique qui permet, par le biais de questions/réponses, de découvrir et de partager la musique.">
+      <meta property="og:image" content="">
+      <!-- Twitter -->
+      <meta property="twitter:card" content="summary_large_image">
+      <meta property="twitter:url" content="https://www.rafko.be/projets/tfa/">
+      <meta property="twitter:title" content="Case-study MUSICOM">
+      <meta property="twitter:description" content="MUSICOM est un forum axée sur la musique qui permet, par le biais de questions/réponses, de découvrir et de partager la musique.">
+      <meta property="twitter:image" content="">
+      <link rel="icon" href="assets/images/logo_askit.png">
+   </head>
+   <body>
+      <div class="grab" id="grab"></div>
+      <!-- <div class="loader loader--active">
+         <div class="loader__tile"></div>
+         </div> -->
+      <header class="section section--header" id="navbar">
+         <div class="nav">
+            <div class="nav__logo">
+               <a href="index.html">
+                  <span class="hidden">Retour au menu principal</span>
+                  <svg width="75" height="35" viewBox="0 0 75 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path class="vec vec1" d="M26.8168 14.1584V33.378H1.5V14.1584C1.5 7.16737 7.16737 1.5 14.1584 1.5C21.1495 1.5 26.8168 7.16737 26.8168 14.1584Z" fill="white" stroke="black" stroke-width="3"/>
+                     <path class="vec vec2" d="M52.1332 14.1584V33.378H26.8164V14.1584C26.8164 7.16737 32.4838 1.5 39.4748 1.5C46.4659 1.5 52.1332 7.16737 52.1332 14.1584Z" fill="white" stroke="black" stroke-width="3"/>
+                     <path class="vec vec3" d="M50.7515 15.1943C50.7515 18.1638 49.8995 20.7885 48.5986 22.6315C47.2949 24.4784 45.6341 25.4354 43.9636 25.4354C42.2931 25.4354 40.6324 24.4784 39.3287 22.6315C38.0278 20.7885 37.1758 18.1638 37.1758 15.1943C37.1758 12.2247 38.0278 9.60002 39.3287 7.75705C40.6324 5.91014 42.2931 4.95312 43.9636 4.95312C45.6341 4.95312 47.2949 5.91014 48.5986 7.75705C49.8995 9.60002 50.7515 12.2247 50.7515 15.1943Z" fill="black" stroke="black" stroke-width="3"/>
+                     <path class="vec vec4" d="M25.4351 15.1943C25.4351 18.1638 24.5831 20.7885 23.2822 22.6315C21.9785 24.4784 20.3177 25.4354 18.6472 25.4354C16.9767 25.4354 15.316 24.4784 14.0123 22.6315C12.7114 20.7885 11.8594 18.1638 11.8594 15.1943C11.8594 12.2247 12.7114 9.60002 14.0123 7.75705C15.316 5.91014 16.9767 4.95312 18.6472 4.95312C20.3177 4.95312 21.9785 5.91014 23.2822 7.75705C24.5831 9.60002 25.4351 12.2247 25.4351 15.1943Z" fill="black" stroke="black" stroke-width="3"/>
+                     <path class="note" d="M74.2761 0.0110672L62.5515 2.26684C62.2629 2.32201 62.0567 2.57005 62.0624 2.8553V16.9274C61.0767 16.4215 59.9229 16.3212 58.8603 16.6489C57.968 16.8805 57.1738 17.3803 56.5922 18.0769C56.0724 18.6673 55.8794 19.4655 56.0746 20.2189C56.3981 21.3214 57.6311 22 59.0746 22C59.5177 21.9993 59.9588 21.9385 60.3845 21.8194C61.8602 21.4271 62.9962 20.364 63.2146 19.2145C63.2581 18.9962 63.2784 18.774 63.2753 18.5516V7.3551L73.787 5.24448V14.5736C72.8013 14.0676 71.6475 13.9674 70.5849 14.2951C68.6281 14.8365 67.3828 16.441 67.8033 17.865C68.1269 18.9675 69.3598 19.6462 70.8033 19.6462C71.2464 19.6455 71.6875 19.5847 72.1132 19.4656C73.5889 19.0733 74.7249 18.0102 74.9433 16.8606C74.9785 16.6809 74.9974 16.4985 74.9999 16.3155V16.2919V0.599558C75.0033 0.421574 74.9236 0.251693 74.7831 0.137414C74.6425 0.0231344 74.4562 -0.0232755 74.2761 0.0110962L74.2761 0.0110672Z" fill="black"/>
+                  </svg>
+               </a>
             </div>
-              <div class="users__feedbacks--desktop">
-                  <div class="txt-square txt-square1" data-speed="1" data-parallax>
-                      <p>
-                        De nombreux auditeurs découvrent des nouveaux morceaux grâce aux suggestions Spotify mais trouvent uniquement 1 son qui lui plaît sur les 50 disponibles.
-                      </p>
-                  </div>
-                  <div class="txt-square txt-square2" data-speed="2" data-parallax>
-                    <p>
-                        Certains se posent des questions sur ce vaste monde de la musique mais Internet ne peut répondre à ces dernières.
-                    </p>
-                </div>
-                <div class="txt-square txt-square3" data-speed="3" data-parallax>
-                    <p>
-                        Certaines personnes sont très ouvertes et veulent partager leur savoir sur la musique et donner des suggestions à d’autres personnes.
-                    </p>
-                </div>
-              </div>
-
-          </section>
-          <section class="section section--problems">
-              <div class="problems__txt">
-                <h3 class="title title--medium">Les solutions aux problèmes rencontrés</h3>
-                <p>
+            <div class="nav__download">
+               <a href="https://xd.adobe.com/view/07e8a65e-3bb0-4e35-84a7-22f59e3b2cad-52bb/?fullscreen&hints=off">ESSAYER</a>
+            </div>
+         </div>
+         <button class="btn btn--darkmode">Dark Mode</button>
+      </header>
+      <main class="case-study">
+         <section class="section section--intro-cs ">
+            <h3 class="title title--medium">case-study de l'application</h3>
+            <h1 class="title title--main">MUSICOM</h1>
+            <p>
+               Musicom est une application de forum axée sur la musique qui permet aux utilisateurs, par le biais de questions/réponses, de découvrir et de partager leurs connaissances musicales.
+            </p>
+         </section>
+         <section class="section section--intro-projet">
+            <p class="bold">
+               Le voilà, le dernier projets.
+               Contrairement aux autres travaux qu’on a déjà effectués, celui-là est assez libre dans l’ensemble. Et pour ce dernier, j’ai décidé de partir sur un sujet qui touchera énormément un très vaste public.
+            </p>
+         </section>
+         <section class="section section--concept">
+            <h3 class="title title--medium">EXPLICATION DU CONCEPT</h3>
+            <p>
+               Lorsqu’on écoute beaucoup de musique et qu’on a une centaine d’heures d’écoute sur sa playlist Spotify, eh bien on s’en lasse parfois et on a envie de découvrir de nouvelles choses, de nouveaux genres, de nouveaux artistes. Même si certains morceaux sont intemporels et peuvent être écoutés en boucle, on sent parfois ce manque de nouveautés parmi les auditeurs interviewés.
+            </p>
+            <p class="bold">
+               Je me suis donc focalisé sur cette problématique principale et j’ai émis l’hypothèse que les personnes qui écoutent beaucoup la musique seraient intéressées par un forum mobile où l’on peut découvrir de nouvelles chansons grâce à des questions/réponses entre utilisateurs.
+            </p>
+         </section>
+         <section class="section section--users">
+            <div class="users__txt">
+               <h3 class="title title--medium">Rencontre avec les utilisateurs</h3>
+               <p>
+                  Pour vérifier si j’étais sur la bonne piste et si le public cible était intéressé par ce genre de service, j’ai partagé un sondage grâce auquel j’ai recueilli des informations importantes pour la suite du développement de mon projet.
+               </p>
+               <p class="concl">
+                  De nombreuses réponses furent très constructives et m’ont permis d’ouvrir les yeux sur l’importance des tests et de l’avis du public cible. Certaines étaient de très bonnes suggestions que j'utiliserai plus tard dans mon prototype.
+               </p>
+            </div>
+            <div class="users__feedbacks--mobile">
+               <div class="txt-square txt-square1">
+                  <p>
+                     De nombreux auditeurs découvrent des nouveaux morceaux grâce aux suggestions Spotify mais trouvent uniquement 1 son qui lui plaît sur les 50 disponibles.
+                  </p>
+               </div>
+               <div class="txt-square txt-square2">
+                  <p>
+                     Certains se posent des questions sur ce vaste monde de la musique mais Internet ne peut répondre à ces dernières.
+                  </p>
+               </div>
+               <div class="txt-square txt-square3">
+                  <p>
+                     Certaines personnes sont très ouvertes et veulent partager leur savoir sur la musique et donner des suggestions à d’autres personnes.
+                  </p>
+               </div>
+            </div>
+            <div class="users__feedbacks--desktop">
+               <div class="txt-square txt-square1" data-speed="1" data-parallax>
+                  <p>
+                     De nombreux auditeurs découvrent des nouveaux morceaux grâce aux suggestions Spotify mais trouvent uniquement 1 son qui lui plaît sur les 50 disponibles.
+                  </p>
+               </div>
+               <div class="txt-square txt-square2" data-speed="2" data-parallax>
+                  <p>
+                     Certains se posent des questions sur ce vaste monde de la musique mais Internet ne peut répondre à ces dernières.
+                  </p>
+               </div>
+               <div class="txt-square txt-square3" data-speed="3" data-parallax>
+                  <p>
+                     Certaines personnes sont très ouvertes et veulent partager leur savoir sur la musique et donner des suggestions à d’autres personnes.
+                  </p>
+               </div>
+            </div>
+         </section>
+         <section class="section section--problems">
+            <div class="problems__txt">
+               <h3 class="title title--medium">Les solutions aux problèmes rencontrés</h3>
+               <p>
                   Après avoir interviewé mon public cible et après avoir identifié les soucis que rencontrent les gens, j’ai pensé aux fonctionnalités que mon application pourrait avoir pour résoudre ces problèmes.
-                </p>
-              </div>
-              <div class="problems__fonc">
-                <div class="container">
+               </p>
+            </div>
+            <div class="problems__fonc">
+               <div class="container">
                   <div class="card">
-                    <div class="card__slider" data-element="carousel">
-                      <div class="card__inner">
-                        <h2 class="title title--big">Poser une question</h2>
-                        <p class="card__text">La première étant d’avoir la possibilité de poser une question sur un feed en rapport avec la musique. Questions qui peuvent être accompagnées d’une image et/ou d’un morceau qu’on peut écouter directement sans passer par des liens.</p>
-                        <a href="#" class="button">voir la fonctionnalité</a>
-                      </div>
-                      <div class="card__inner">
-                        <h2 class="title title--big">Répondre aux questions</h2>
-                        <p class="card__text">La deuxième est la possibilité de pouvoir répondre à ces questions, que ce soit avec un simple paragraphe ou avec une musique.</p>
-                        <a href="#" class="button">voir la fonctionnalité</a>
-                      </div>
-                      <div class="card__inner">
-                        <h2 class="title title--big">Ecoutez vos découvertes sans difficultés</h2>
-                        <p class="card__text">Grâce au lecteur de musique, vous pouvez écouter la musique que d'autres utilisateurs ont partagé sans passer par des liens. Vous pouvez également l'ajouter à votre réponse.</p>
-                        <a href="#" class="button">voir la fonctionnalité</a>
-                      </div>
-                    </div>
+                     <div class="card__slider" data-element="carousel">
+                        <div class="card__inner">
+                           <h2 class="title title--big">Poser une question</h2>
+                           <p class="card__text">La première étant d’avoir la possibilité de poser une question sur un feed en rapport avec la musique. Questions qui peuvent être accompagnées d’une image et/ou d’un morceau qu’on peut écouter directement sans passer par des liens.</p>
+                           <a href="#" class="button">voir la fonctionnalité</a>
+                        </div>
+                        <div class="card__inner">
+                           <h2 class="title title--big">Répondre aux questions</h2>
+                           <p class="card__text">La deuxième est la possibilité de pouvoir répondre à ces questions, que ce soit avec un simple paragraphe ou avec une musique.</p>
+                           <a href="#" class="button">voir la fonctionnalité</a>
+                        </div>
+                        <div class="card__inner">
+                           <h2 class="title title--big">Ecoutez vos découvertes sans difficultés</h2>
+                           <p class="card__text">Grâce au lecteur de musique, vous pouvez écouter la musique que d'autres utilisateurs ont partagé sans passer par des liens. Vous pouvez également l'ajouter à votre réponse.</p>
+                           <a href="#" class="button">voir la fonctionnalité</a>
+                        </div>
+                     </div>
                   </div>
-                </div>
-              </div>
-              
-
-          </section>
-          <section class="section section--prototype">
-
-              <h3 class="title title--medium">Création du prototype</h3>
-
-              <p>
-                C’est à présent qu’entre en jeu le MVP, autrement dit, le “produit minimum viable”. Il s’agit d’une première version de prototype, pouvant être améliorée par le suite grâce aux retours des tests utilisateurs. Celle-ci est sans design, sans image et en niveau de gris, ce qui permet de vérifier l’accessibilité de l’application sans que le “testeur” ne soit influencé par l’aspect visuel.
-                Après avoir effectué les tests utilisateurs, j’ai ressorti plusieurs éléments intéressants à améliorer&nbsp;:
-              </p>
-
-              <div class="tester">
-                <img src="assets/images/users_test.png" alt="tester">
-              </div>
-
-              <figure class="figure">
-                <blockquote cite="https://www.huxley.net/bnw/four.html">
-                    <p>People ignore design that ignores people.</p>
-                </blockquote>
-                <figcaption>—Frank Chimero</figcaption>
-              </figure>
-
-          </section>
-
-          <section class="section section--art-dir">
-              <h3 class="title title--medium">La direction artistique</h3>
-              <p class="p1">
-                Le design reste quand même une partie très importante dans la conception du projet.
-                C’est ma partie préférée donc j’ai cherché au préalable quelques inspirations, que ce soit pour les couleurs, la disposition des données ou même pour les images.                
-              </p>
-              <p class="p2">
-                En plus du design, je devais trouver un logo ainsi qu’un nom à mon application ce qui, selon moi, est parfois très long et pas si évident que ça. Après de nombreux essais et croquis, je vous présente musicom accompagné de son logo. Ce dernier représente des yeux (cartoon pour être en cohérence avec la direction graphique) qui signifient la curiosité et la recherche, et une note de musique pour représenter le côté musical de l’application.
-              </p>
-          </section>
-          <section class="sectionsection--result">
-              <h3 class="title title--medium">Le résultat final</h3>
-              <div class="img-parallax">
-                  <img src="#" alt="Ecrans de l'application">
-              </div>
-          </section>
-          <section class="section section--conclusion">
-              <p class="bold">
-                Ce projet de TFA était une grande expérience pour moi. Aller à la rencontre des utilisateurs m’a permis d’améliorer mon travail et d'être à leur écoute car après tout c’est pour eux qu’on fait ce projet. Ce que j’ai le plus aimé, comme pour chaque projet, c’est l’étape du prototype où l’on fusionne UI et UX. Certes, j’ai eu un peu du mal avec le côté UX mais je me suis vite rendu compte de l’importance des tests utilisateurs pour un résultat concret et optimal.
-              </p>
-          </section>
-          <footer class="section section--footer">
+               </div>
+            </div>
+         </section>
+         <section class="section section--prototype">
+            <h3 class="title title--medium">Création du prototype</h3>
+            <p>
+               C’est à présent qu’entre en jeu le MVP, autrement dit, le “produit minimum viable”. Il s’agit d’une première version de prototype, pouvant être améliorée par le suite grâce aux retours des tests utilisateurs. Celle-ci est sans design, sans image et en niveau de gris, ce qui permet de vérifier l’accessibilité de l’application sans que le “testeur” ne soit influencé par l’aspect visuel.
+               Après avoir effectué les tests utilisateurs, j’ai ressorti plusieurs éléments intéressants à améliorer&nbsp;:
+            </p>
+            <div class="tester">
+               <img class="image__anim" src="assets/images/users_test.png" alt="tester">
+            </div>
+            <figure class="figure">
+               <blockquote cite="https://www.huxley.net/bnw/four.html">
+                  <p>People ignore design that ignores people.</p>
+               </blockquote>
+               <figcaption>—Frank Chimero</figcaption>
+            </figure>
+         </section>
+         <section class="section section--art-dir">
+            <h3 class="title title--medium">La direction artistique</h3>
+            <p class="p1">
+               Le design reste quand même une partie très importante dans la conception du projet.
+               C’est ma partie préférée donc j’ai cherché au préalable quelques inspirations, que ce soit pour les couleurs, la disposition des données ou même pour les images.                
+            </p>
+            <p class="p2">
+               En plus du design, je devais trouver un logo ainsi qu’un nom à mon application ce qui, selon moi, est parfois très long et pas si évident que ça. Après de nombreux essais et croquis, je vous présente musicom accompagné de son logo. Ce dernier représente des yeux (cartoon pour être en cohérence avec la direction graphique) qui signifient la curiosité et la recherche, et une note de musique pour représenter le côté musical de l’application.
+            </p>
+         </section>
+         <section class="section section--result">
+            <h3 class="title title--medium">Le résultat final</h3>
+            <div class="logo-container">
+               <div class="logos">
+                  <img class="logo logo-light" src="assets/images/svg/light-logo.svg" alt="logo de muisicom en mode light">
+                  <img class="logo logo-dark" src="assets/images/svg/dark-logo.svg" alt="logo de muisicom en mdoe dark">
+               </div>
+               <div class="logo-typo">
+                  <p>MUSICOM®</p>
+               </div>
+            </div>
+         </section>
+         <div class="wrap">
+            <div class="img-parallax"></div>
+         </div>
+         <section class="section section--conclusion">
+            <p class="bold">
+               Ce projet de TFA était une grande expérience pour moi. Aller à la rencontre des utilisateurs m’a permis d’améliorer mon travail et d'être à leur écoute car après tout c’est pour eux qu’on fait ce projet. Ce que j’ai le plus aimé, comme pour chaque projet, c’est l’étape du prototype où l’on fusionne UI et UX. Certes, j’ai eu un peu du mal avec le côté UX mais je me suis vite rendu compte de l’importance des tests utilisateurs pour un résultat concret et optimal.
+            </p>
+         </section>
+         <footer class="section section--footer">
             <ul class="footer__list">
-              <li class="footer__el"><a href="case-study.html">Case-study</a></li>
-              <li class="footer__el"><a href="ui-kit.html">Ui-kit</a></li>
-              <li class="footer__el"><button class="open-button" data-modal-target="#modal">Crédits</button>
-                <div class="modal" id="modal">
-                  <div class="modal-header">
-                    <p class="title title--medium">Crédits<p>
-                    <button data-close-button class="close-button">&times;</button>
+               <li class="footer__el"><a href="case-study.html">Case-study</a></li>
+               <li class="footer__el"><a href="ui-kit.html">Ui-kit</a></li>
+               <li class="footer__el">
+                  <button class="open-button" data-modal-target="#modal">Crédits</button>
+                  <div class="modal" id="modal">
+                     <div class="modal-header">
+                        <h2 class="title title--medium">
+                        Crédits
+                        <h2>
+                        <button data-close-button class="close-button">&times;</button>
+                     </div>
+                     <div class="modal-body">
+                        <ul class="credits-list">
+                           <li class="credits-list__el"><a href="https://thenounproject.com/"><img src="assets/images/svg/noun-project-logo.svg" alt="logo noun project"></a></li>
+                           <li class="credits-list__el"><a href="https://codepen.io/"><img src="assets/images/svg/codepen-logo.svg" alt="logo codepen"></a></li>
+                           <li class="credits-list__el"><a href="https://www.youtube.com/"><img src="assets/images/svg/youtube-logo.svg" alt="logo de youtube"></a></li>
+                        </ul>
+                     </div>
                   </div>
-                  <div class="modal-body">
-                    <ul class="credits-list">
-                      <li class="credits-list__el"><a href="https://thenounproject.com/"><img src="assets/images/svg/noun-project-logo.svg" alt="logo noun project"></a></li>
-                      <li class="credits-list__el"><a href="https://codepen.io/"><img src="assets/images/svg/codepen-logo.svg" alt="logo codepen"></a></li>
-                      <li class="credits-list__el"><a href="https://www.youtube.com/"><img src="assets/images/svg/youtube-logo.svg" alt="logo de youtube"></a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div id="overlay"></div>
-              </li>
+                  <div id="overlay"></div>
+               </li>
             </ul>
-            
             <small class="date" id="date">©rafko2022-2023</small>
             <div class="dwt">
-              <img class="logo__dwt" src="assets/images/svg/logo-dwt.svg" alt="logo DWT">
+               <img class="logo__dwt" src="assets/images/svg/logo-dwt.svg" alt="logo DWT">
             </div>
-        </footer>
+         </footer>
       </main>
-
-
-  
       <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"></script>
-    
+         src="https://code.jquery.com/jquery-3.6.0.min.js"
+         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+         crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
       <script type="text/javascript">
-        $('[data-element="carousel"]').slick({
-      infinite: false,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: true,
-      arrows: false,
-      customPaging : function(slider, i) {
-        return '<span></span>';
-      },
-    });
+         $('[data-element="carousel"]').slick({
+         infinite: false,
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         dots: true,
+         arrows: false,
+         customPaging : function(slider, i) {
+         return '<span></span>';
+         },
+         });
       </script>
-</body>
+   </body>
 </html>
