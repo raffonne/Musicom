@@ -88,6 +88,92 @@ html {
   background: var(--color-secondary);
 }
 
+
+
+
+
+
+
+.play-music{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 20;
+    z-index: 50;
+  }
+  
+  .music-animation{
+    display: flex;
+    margin-right: 10px;
+    align-items: flex-end;
+    position: relative;
+    top: -10px;
+    &.on{
+      .bar{
+        animation: bar 1.2s infinite;
+      }
+      .bar2{
+        animation-delay: .1s;
+      }
+      .bar3{
+        animation-delay: .2s;
+      }
+      .bar4{
+        animation-delay: .3s;
+      }
+      .bar5{
+        animation-delay: .4s;
+      }
+    }
+  }
+  .music-toggle{
+    cursor: pointer;
+    font-size: 20px;
+    position:relative;
+    &:after{
+      content: "";
+      display: block;
+      height: 1px;
+      width: 0;
+      background-color: var(--color-text);
+      position: absolute;
+      transition: .2s;
+    }
+    &:hover:after{
+      width: 100%;
+    }
+  }
+  .bar{
+    width: 1px;
+    background-color: var(--color-text);
+    height: 2px;
+    display: block;
+    margin: 0 1px; 
+  }
+  
+  
+  @keyframes bar{
+    0%{
+      height:4px;
+    }
+    50%{
+      height: 14px;
+    }
+    100%{
+      height: 4px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
 body {
   color: var(--color-text);
   font-size: 17px;
@@ -98,9 +184,16 @@ body {
   line-height: 1.5;
   background-color: var(--color-bg);
 }
+.dwm__logo{
+  height: 35px;
+  .letters{
+    fill:var(--color-text);
+  }
+}
 section {
   max-width: 2000px;
   padding: 0px 16px 0px 16px;
+  grid-gap: 1em;
 }
 .title {
   line-height: 1.125;
@@ -148,7 +241,6 @@ a {
 
 .btn--darkmode {
   background: none;
-  height: 55px;
   width: 55px;
   border: none;
   position: fixed;
@@ -241,7 +333,9 @@ a {
 
 // INTRO //
 .section--intro {
-  padding-top: 15em;
+  padding-top: 8em;
+  display: flex;
+  flex-direction: column-reverse;
 }
 .section--intro__text {
   max-width: 40ch;
@@ -249,7 +343,7 @@ a {
     position: absolute;
     top: 20%;
     right: 10%;
-    width: 40%;
+    width: 30%;
     transform: translatey(0px);
     animation: float 5s ease-in-out infinite;
   }
@@ -269,7 +363,6 @@ a {
   margin: 20px;
 }
 .dl-icons {
-  margin-top: 50px;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -368,20 +461,16 @@ a {
 //FOOTER//
 
 .section--footer {
+  padding-top:3em;
+  padding-bottom: 2em;
   display: flex;
   flex-direction: column;
   align-items: bottom;
   position: relative;
-  .wave {
-    bottom: 0;
-
-    position: absolute;
-    z-index: -1000000;
-    width: 100%;
-  }
 }
 
 .footer__list {
+  
   text-transform: uppercase;
   padding-right: 1em;
   padding-left: 1em;
@@ -390,12 +479,15 @@ a {
   justify-content: space-between;
 }
 
+
 .date {
+  padding-top: 2em;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
 }
 .dwt {
+  padding-top: 2em;
   margin: 1em;
   display: flex;
   justify-content: center;
@@ -487,7 +579,14 @@ section {
   padding-top: 5em;
 }
 .section--intro-cs {
-  padding-top: 25em;
+  padding-top: 30em;
+  padding-bottom: 3em;
+  background-image: url(../assets/images/imgbg_cs.jpg);
+  background-image: image-set(url("../assets/images/imgbg_cs.jpg") 1x, url(../assets/images/imgbg_cs@2x.jpg) 2x);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
   h1 {
     margin-top: 0;
     margin-bottom: 0;
@@ -646,6 +745,10 @@ span {
   }
 }
 
+
+.mvp-img{
+  width: 100%;
+}
 .tester {
   margin-top: 5em;
   height: 20em;
@@ -664,7 +767,16 @@ span {
     height: 100%;
   }
 }
+.upgrades-list__el{
+  margin: 1em;
+}
 
+.wrong:before {
+  content: '🔴';
+}
+.correct:before{
+  content: '🟢';
+}
 .figure {
   grid-area: fig;
   margin-top: 10em;
@@ -745,6 +857,7 @@ blockquote p::after {
   height: 80vh;
   width: 160%;
   background-image: url(../assets/images/plx-proto.png);
+  background-image: image-set(url("../assets/images/plx-proto.png") 1x, url(../assets/images/plx-proto@2x.jpg) 2x);
   background-position-x: center 5em;
   background-repeat: no-repeat;
   background-size: cover;
@@ -768,7 +881,7 @@ blockquote p::after {
   .quote {
     margin-bottom: 0;
   }
-  div {
+  section{
     margin-top: 2em;
   }
 }
@@ -781,6 +894,7 @@ blockquote p::after {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-top: 2em;
 }
 .color-sq {
   text-align: center;
@@ -830,6 +944,7 @@ blockquote p::after {
       width: 30%;
     }
   }
+  
   .section--fonctionnalities {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -926,9 +1041,25 @@ blockquote p::after {
     margin: 0;
     font-size: 22px;
   }
+  .link{
+    font-weight: 600;
+  }
+  .link:hover{
+    border-bottom: solid 2px #272343;
+  }
+  .link:visited{
+    color:#6f65aa ;
+  }
   section {
     padding-right: 9em;
     padding-left: 9em;
+  }
+  .nav__download:hover {
+    background-color: var(--color-bg);
+    border: solid 1px var(--color-text);
+    a {
+      color: var(--color-text);
+    }
   }
   .section--intro {
     padding-top: 6em;
@@ -939,15 +1070,7 @@ blockquote p::after {
     grid-template-areas: "a1 a2";
   }
 
-  // .arrow{
-  //     transform:persp;
-  //     z-index: 2;
-  //     position: absolute;
-  //     width: 10%;
-  //     bottom: 0;
-  //     left: 40%;
-  //     transform: scaleX(-1);
-  // }
+
   .section--intro__text {
     margin: 0;
     display: flex;
@@ -988,10 +1111,14 @@ blockquote p::after {
   }
   .dl-icons__img {
     margin-right: 20px;
+    transition: all .2s ease-in-out;
     img {
       height: 60px;
       width: 200px;
     }
+  }
+  .dl-icons__img:hover{
+    transform: scale(1.1);
   }
 
   .section--ask {
@@ -1058,11 +1185,7 @@ blockquote p::after {
     color: #f3fbfb;
     padding-top: 15em;
     padding-bottom: 3em;
-    background-image: url(../assets/images/IMG_1358.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: bottom;
+
     .title--main {
       color: #f3fbfb;
     }
@@ -1103,12 +1226,13 @@ blockquote p::after {
     right: 0px;
   }
   .txt-square3 {
-    top: 1100px;
+    top: 1150px;
     left: 200px;
   }
 
   .section--problems {
     display: grid;
+    grid-gap: 3em;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "txt slide";
   }
@@ -1126,7 +1250,8 @@ blockquote p::after {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "h3 h3"
-      ". p"
+      "mvp p"
+      ". li"
       "img img"
       "fig fig";
     h3 {
@@ -1135,15 +1260,25 @@ blockquote p::after {
     p {
       grid-area: p;
       display: flex;
+      margin: 0;
     }
-    .img {
-      width: 80%;
-      grid-area: img;
-    }
+    
+
     figure {
       grid-area: fig;
     }
   }
+  .upgrades-list{
+    grid-area: li;
+  }
+  .mvp-img{
+    width: 80%;
+    grid-area: img;
+  }
+
+
+
+
   blockquote {
     font-size: 3em;
     text-align: center;
@@ -1154,11 +1289,9 @@ blockquote p::after {
   .img-parallax {
     height: 100vh;
     width: 120%;
-    background-image: url(../assets/images/plx-proto.png);
-    background-position-x: center 1em;
-    background-repeat: no-repeat;
-    background-size: 100%;
+
   }
+ 
 
   .section--conclusion {
     grid-template-columns: 1fr 1fr;
@@ -1178,6 +1311,9 @@ blockquote p::after {
   }
   .txt-examples {
     grid-area: fonts-txt;
+  }
+  .section--footer{
+    padding-top: 0;
   }
 }
 

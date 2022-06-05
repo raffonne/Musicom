@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html  lang="fr">
 <head>
     <title>MUSICOM</title>
   <meta charset="UTF-8" />
@@ -29,9 +29,7 @@
   <link rel="icon" href="assets/images/logo_askit.png">
 <body>
   <div class="grab" id="grab"></div>
-  <!-- <div class="loader loader--active">
-    <div class="loader__tile"></div>
-  </div> -->
+
   <header class="section section--header" id="navbar">
       <div class="nav">
         <div class="nav__logo">
@@ -47,12 +45,24 @@
           
         </div>
         <div class="nav__download">
-          <a href="https://xd.adobe.com/view/07e8a65e-3bb0-4e35-84a7-22f59e3b2cad-52bb/?fullscreen&hints=off">ESSAYER</a>
+          <a href="https://www.figma.com/file/BfOmQUVEB2utvg7vX9oM1p/TFA2021-2022?node-id=0%3A1">ESSAYER</a>
         </div>
       </div>
           <div class="btn--darkmode">
-        <button class="btn"></button>
-      </div>
+            <button class="btn"></button>
+          </div>
+          
+          <div class="play-music">
+            <div id="music-animation" class="music-animation">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+              <span class="bar bar3"></span>
+              <span class="bar bar4"></span>
+              <span class="bar bar5"></span>
+            </div>
+            <div class="music-toggle"><a id="toggle" data-text-swap="Music on">Music off</a></div>
+          </div>
+          <audio id="music" loop="loop" src="assets/music/black-sails.mp3"></audio>
     </header>
     
 
@@ -60,7 +70,6 @@
     <section class="section section--intro">
       
       <div class="section--intro__text">
-        <img class="persona" src="assets/images/svg/sun.svg" alt="persona">
         <h1 class="title title--main">
           Découvre à&nbsp;nouveau <span class="title-main-span">la&nbsp;musique.</span>
         </h1>
@@ -69,12 +78,12 @@
         </p>
         <div class="dl-icons">
           <div class="dl-icons dl-icons__img">
-            <a href="https://xd.adobe.com/view/07e8a65e-3bb0-4e35-84a7-22f59e3b2cad-52bb/?fullscreen&hints=off">
+            <a href="https://www.figma.com/file/BfOmQUVEB2utvg7vX9oM1p/TFA2021-2022?node-id=0%3A1">
               <img src="assets/images/svg/google-play-badge.svg" alt="apple store button">
             </a>
           </div>
           <div class="dl-icons dl-icons__img">
-            <a href="https://xd.adobe.com/view/07e8a65e-3bb0-4e35-84a7-22f59e3b2cad-52bb/?fullscreen&hints=off">
+            <a href="https://www.figma.com/file/BfOmQUVEB2utvg7vX9oM1p/TFA2021-2022?node-id=0%3A1">
               <img src="assets/images/svg/Google_Play_Store_badge_EN.svg" alt="google store button">
             </a>
           </div>
@@ -84,9 +93,7 @@
         <img src="assets/images/svg/illu_landing.svg" alt="landing">
       </div>
 
-      <!-- <div class="arrow_img">
-        <img class="arrow" src="assets/images/svg/arrow-01.svg" alt="flèche">
-      </div> -->
+      
     </section>
 
 
@@ -126,46 +133,6 @@
       </div>
     </section>
 
-    <!-- <section class="section section--comments">
-
-      <div class="commentaires commentaire--1">
-        <div class="user">
-          <div class="user__img"></div>
-        <p class="bold">@tgrs</p>
-        </div>
-        <div class="com">
-          <small>
-            J’utilise facebook pour partager mes musiques. Mais, après réflexion, un site complet exclusivement dédié à ça me parait plus utile. Pour courage pour ton tfa :3
-          </small>
-        </div>
-      </div>
-
-      <div class="commentaires commentaire--1">
-        <div class="user">
-          <div class="user__img"></div>
-        <p class="bold">@rafikxpablo</p>
-        </div>
-        <div class="com">
-          <small>
-            Ca pourrait etre chouette parce que parfois jai envie de decouvrir de kouvelles musiques mais spotiy ou youtube on tendance a soit proposer les mêmes soit des styles complètement opposés.
-          </small>
-        </div>
-      </div>
-
-      <div class="commentaires commentaire--1">
-        <div class="user">
-          <div class="user__img"></div>
-        <p class="bold">@rafikxpablo</p>
-        </div>
-        <div class="com">
-          <small>
-            Très bonne initiative, surtout pour les nouveautés.
-          </small>
-        </div>
-      </div>
-
-    </section> -->
-
 
 
     <section class="section section--info">
@@ -176,12 +143,12 @@
         </p>
         <div class="dl-icons">
           <div class="dl-icons__img">
-            <a href="https://xd.adobe.com/view/07e8a65e-3bb0-4e35-84a7-22f59e3b2cad-52bb/?fullscreen&hints=off">
+            <a href="https://www.figma.com/file/BfOmQUVEB2utvg7vX9oM1p/TFA2021-2022?node-id=0%3A1">
               <img src="assets/images/svg/google-play-badge.svg" alt="apple store button">
             </a>
           </div>
           <div class="dl-icons__img">
-            <a href="https://xd.adobe.com/view/07e8a65e-3bb0-4e35-84a7-22f59e3b2cad-52bb/?fullscreen&hints=off">
+            <a href="https://www.figma.com/file/BfOmQUVEB2utvg7vX9oM1p/TFA2021-2022?node-id=0%3A1">
               <img src="assets/images/svg/Google_Play_Store_badge_EN.svg" alt="google store button">
             </a>
           </div>
@@ -193,39 +160,45 @@
        
     </section>
 
+
+
+
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <p class="title title--big">Crédits<p>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        <ul class="credits-list">
+          <li class="credits-list__el"><a href="https://thenounproject.com/"><img src="assets/images/svg/noun-project-logo.svg" alt="logo noun project"></a></li>
+          <li class="credits-list__el"><a href="https://codepen.io/"><img src="assets/images/svg/codepen-logo.svg" alt="logo codepen"></a></li>
+          <li class="credits-list__el"><a href="https://www.youtube.com/"><img src="assets/images/svg/youtube-logo.svg" alt="logo de youtube"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="overlay"></div>
+ 
+
     <footer class="section section--footer">
       <ul class="footer__list">
         <li class="footer__el"><a href="case-study.html">Case-study</a></li>
         <li class="footer__el"><a href="ui-kit.html">Ui-kit</a></li>
         <li class="footer__el"><button class="open-button" data-modal-target="#modal">Crédits</button>
-          <div class="modal" id="modal">
-            <div class="modal-header">
-              <h2 class="title title--big">Crédits<h2>
-              <button data-close-button class="close-button">&times;</button>
-            </div>
-            <div class="modal-body">
-              <ul class="credits-list">
-                <li class="credits-list__el"><a href="https://thenounproject.com/"><img src="assets/images/svg/noun-project-logo.svg" alt="logo noun project"></a></li>
-                <li class="credits-list__el"><a href="https://codepen.io/"><img src="assets/images/svg/codepen-logo.svg" alt="logo codepen"></a></li>
-                <li class="credits-list__el"><a href="https://www.youtube.com/"><img src="assets/images/svg/youtube-logo.svg" alt="logo de youtube"></a></li>
-              </ul>
-            </div>
-          </div>
-          <div id="overlay"></div>
         </li>
       </ul>
       
       <small class="date" id="date">©rafko2022-2023</small>
+      
       <div class="dwt">
-        <img class="logo__dwt" src="assets/images/svg/logo-dwt.svg" alt="logo DWT">
+         <a href="http://dwm.re/">
+            <svg class="dwm__logo" viewBox="0 0 228.06 74.38" xmlns="http://www.w3.org/2000/svg"><path class="letters" d="M17.78 0H0v62.59h18.66c17.88 0 30.13-10.08 30.13-31.58S36.53 0 17.77 0zm16.09 31c0 15-6.81 20.16-16.89 20.16h-2.36V11.42H17C27.06 11.42 33.87 16 33.87 31zM52.73 0h15.11l2 33.31.3 15.74h.4c.88-5.66 2.07-10.46 3.16-15.74L78 15.84h9.28l4 17.47c1.09 5.19 2.17 10 3.16 15.74h.4c.1-5.75.19-10.55.39-15.74L97.07 0h14.12l-7.9 62.59h-15.6L83.93 43.2a87.14 87.14 0 01-1.77-11.9h-.3q-.57 6-1.67 11.9l-3.76 19.39H61.32zm64.58 0h15.2l6.33 22.18 2.16 8.64h.39l2.17-8.64L149.9 0h15.21v62.59h-12.26V43.2c0-7 1.28-22.27 1.88-29h-.3l-4.93 16.7-4.94 15.1h-7.11l-5-15.08-4.64-16.7h-.3c.69 6.72 1.88 22 1.88 29v19.37h-12V0"  /><path class="underscore" d="M183.22 74.38h44.84V62.59h-44.84z" fill="#f6d94f"/></svg>
+         </a>
+        
       </div>
   </footer>
 
+
   </main>
-
-
-
-
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
 </body>
 </html>
