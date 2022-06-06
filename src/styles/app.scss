@@ -581,12 +581,6 @@ section {
 .section--intro-cs {
   padding-top: 30em;
   padding-bottom: 3em;
-  background-image: url(../assets/images/imgbg_cs.jpg);
-  background-image: image-set(url("../assets/images/imgbg_cs.jpg") 1x, url(../assets/images/imgbg_cs@2x.jpg) 2x);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: bottom;
   h1 {
     margin-top: 0;
     margin-bottom: 0;
@@ -857,7 +851,7 @@ blockquote p::after {
   height: 80vh;
   width: 160%;
   background-image: url(../assets/images/plx-proto.png);
-  background-image: image-set(url("../assets/images/plx-proto.png") 1x, url(../assets/images/plx-proto@2x.jpg) 2x);
+  background-image: image-set(url("../assets/images/plx-proto.png") 1x, url(../assets/images/plx-proto@2x.png) 2x);
   background-position-x: center 5em;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1185,6 +1179,12 @@ blockquote p::after {
     color: #f3fbfb;
     padding-top: 15em;
     padding-bottom: 3em;
+    background-image: url(../assets/images/imgbg_cs.jpg);
+    background-image: image-set(url("../assets/images/imgbg_cs.jpg") 1x, url(../assets/images/imgbg_cs@2x.jpg) 2x);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
 
     .title--main {
       color: #f3fbfb;
